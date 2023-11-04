@@ -1,7 +1,16 @@
 // Importing part
 import {ReactNode} from "react";
 import {Metadata} from "next";
+import localFont from 'next/font/local'
 import '@/app/index.css';
+import {NextFontWithVariable} from "next/dist/compiled/@next/font";
+
+// Defining font (SF Pro)
+const SFProFont:NextFontWithVariable = localFont({
+    src: '../public/font/font-SFpro.ttf',
+    weight: '400',
+    variable: '--font-sf-pro'
+})
 
 // Creating and exporting metadata of page or pages
 export const metadata:Metadata = {
@@ -28,7 +37,7 @@ export default function RootLayout({children}:propsType):ReactNode {
     // Returning JSX
     return (
         <html>
-            <body className={'bg-theme'}>
+            <body className={`bg-theme ${SFProFont.variable} font-primary`}>
                 {children}
             </body>
         </html>
