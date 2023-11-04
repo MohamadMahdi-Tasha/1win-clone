@@ -4,6 +4,7 @@ import FreeMoneyComponent from "@/chunk/header/topside/freeMoneyComponent";
 import IconButtonComponent from '@/chunk/header/topside/iconButtonComponent';
 import PromotionsComponent from '@/chunk/header/topside/promotionsComponent';
 import IconComponent from "@/chunk/iconComponent";
+import LangDropdownComponent from "@/chunk/header/topside/langDropdownComponent";
 
 // Creating and exporting top side of header component as default
 export default function TopsideComponent():ReactNode {
@@ -31,6 +32,7 @@ export default function TopsideComponent():ReactNode {
                     <a href="#"><IconComponent name={'apple'} size={10} /></a>
                 </div>
                 <div />
+                <LangDropdownComponent />
             </div>
         </div>
     );

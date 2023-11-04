@@ -3,7 +3,7 @@ import {ReactNode} from "react";
 
 // Defining type of props
 interface propsType {
-    name: 'lock' | 'mobile' | 'arrow-right' | 'star-bag' | 'windows' | 'android' | 'apple' | 'chevron-down';
+    name: 'lock' | 'mobile' | 'arrow-right' | 'star-bag' | 'windows' | 'android' | 'apple' | 'chevron-down' | 'tick';
     size: number;
 }
 
@@ -57,6 +57,12 @@ export default function IconComponent({name, size}:propsType):ReactNode {
         return (
             <svg viewBox="0 0 8 5" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width={size} height={size}>
                 <path fill="currentColor" d="M1.238 3.957a.75.75 0 11-.976-1.139L2.899.558a1 1 0 011.302 0l2.637 2.26a.75.75 0 01-.976 1.14L3.55 1.974 1.238 3.957z" />
+            </svg>
+        );
+    } else if (name === 'tick') {
+        return (
+            <svg viewBox="0 0 11 8" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width={size} height={size}>
+                <path fill={'currentColor'} d="M8.873.335a.986.986 0 111.482 1.302L5.128 7.582a.986.986 0 01-1.4.081L.324 4.594A.986.986 0 011.647 3.13l2.66 2.4L8.873.335z" />
             </svg>
         );
     }
