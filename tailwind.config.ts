@@ -13,12 +13,9 @@ const config: Config = {
     ],
     theme: {
         extend: {
-            colors: {
-                theme: '#090f1e'
-            },
-            fontFamily: {
-                primary: ['var(--font-sf-pro)', 'sans-serif']
-            }
+            maxWidth: {container: '1100px'},
+            colors: {theme: '#090f1e'},
+            fontFamily: {primary: ['var(--font-sf-pro)', 'sans-serif']},
         }
     },
     plugins: [],
