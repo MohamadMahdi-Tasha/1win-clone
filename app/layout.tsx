@@ -2,8 +2,9 @@
 import {ReactNode} from "react";
 import {Metadata} from "next";
 import localFont from 'next/font/local'
-import '@/app/index.css';
 import {NextFontWithVariable} from "next/dist/compiled/@next/font";
+import HeaderComponent from "@/component/headerComponent";
+import '@/app/index.css';
 
 // Defining font (SF Pro)
 const SFProFont:NextFontWithVariable = localFont({
@@ -38,6 +39,7 @@ export default function RootLayout({children}:propsType):ReactNode {
     return (
         <html>
             <body className={`bg-theme ${SFProFont.variable} font-primary`}>
+                <HeaderComponent />
                 {children}
             </body>
         </html>
