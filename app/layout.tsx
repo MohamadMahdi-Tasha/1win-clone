@@ -1,6 +1,7 @@
 // Importing part
 import {ReactNode} from "react";
 import {Metadata} from "next";
+import '@/app/index.css';
 
 // Creating and exporting metadata of page or pages
 export const metadata:Metadata = {
