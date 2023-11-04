@@ -5,14 +5,15 @@ import {Metadata} from "next";
 // Creating and exporting metadata of page or pages
 export const metadata:Metadata = {
     title: '1 WIN',
+    description: 'Casino, bets and slots online. Bonus on your first deposit. Come in, enter the promo code and win now!',
     openGraph: {
-        title: 'Coffee Catch Up - Daily blog app',
-        description: 'Coffee Catch Up is daily my (Mahdi Tasha) daily weblog :))',
+        title: '1 WIN',
+        description: 'Casino, bets and slots online. Bonus on your first deposit. Come in, enter the promo code and win now!',
         type: "website"
     },
     twitter:{
-        title: 'Coffee Catch Up - Daily blog app',
-        description: 'Coffee Catch Up is daily my (Mahdi Tasha) daily weblog :))',
+        title: '1 WIN',
+        description: 'Casino, bets and slots online. Bonus on your first deposit. Come in, enter the promo code and win now!',
     }
 }
 
