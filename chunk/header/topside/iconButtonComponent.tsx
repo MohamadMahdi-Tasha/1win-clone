@@ -11,8 +11,8 @@ interface propsType {
 export default function IconButtonComponent({name}:propsType):ReactNode {
     // Returning JSX
     return (
-        <button>
-            <IconComponent name={name} size={12} />
+        <button className={'aspect-square bg-red-600 text-white w-[30px] flex justify-center rounded-[10px] items-center bg-white/10 transition-all duration-500 hover:bg-white/20'}>
+            <IconComponent name={name} size={13} />
         </button>
     );
 }

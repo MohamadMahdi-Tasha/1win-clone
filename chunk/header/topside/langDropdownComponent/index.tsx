@@ -32,21 +32,21 @@ import ZaImage from '@/public/img/header/flags/img-za.svg';
 export default function LangDropdownComponent():ReactNode {
     // Returning JSX
     return (
-        <div>
-            <button>
-                <span>EN</span>
-                <IconComponent name={'chevron-down'} size={5} />
-                <img src={EnImage.src} alt="Flag of england"/>
+        <div className={'relative'}>
+            <button className={'h-[30px] px-[5px] bg-white/10 flex items-center rounded-[5px] gap-[10px]'}>
+                <span className={'block text-[10px] text-white'}>EN</span>
+                <span className={'text-white rotate-180'}><IconComponent name={'chevron'} size={7} /></span>
+                <img className={'aspect-square w-[20px]'} src={EnImage.src} alt="Flag of england"/>
             </button>
-            <div>
-                <span>Suggested languages</span>
-                <ul>
+            <div className={'absolute top-[130%] right-0 bg-white/10 overflow-auto rounded-[20px] w-[300px] h-[500px] p-[20px] transition-all duration-500'}>
+                <span className={'block truncate text-white text-[15px] font-bold mb-[15px]'}>Suggested languages</span>
+                <ul className={'rounded-[20px] overflow-hidden'}>
                     <LangDropdownItemComponent img={FrImage.src} name={'fr'} isSelected={false} />
                     <LangDropdownItemComponent img={EnImage.src} name={'en'} isSelected={true} />
                     <LangDropdownItemComponent img={RuImage.src} name={'ru'} isSelected={false} />
                 </ul>
-                <span>All languages</span>
-                <ul>
+                <span className={'block truncate text-white text-[15px] font-bold my-[15px]'}>All languages</span>
+                <ul className={'rounded-[20px] overflow-hidden'}>
                     <LangDropdownItemComponent img={AzImage.src} name={'az'} isSelected={false} />
                     <LangDropdownItemComponent img={BdImage.src} name={'bd'} isSelected={false} />
                     <LangDropdownItemComponent img={BrImage.src} name={'br'} isSelected={false} />

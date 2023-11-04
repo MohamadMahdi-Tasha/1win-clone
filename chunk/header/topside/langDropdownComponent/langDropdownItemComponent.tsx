@@ -132,15 +132,17 @@ export default function LangDropdownItemComponent({name,img,isSelected}:propsTyp
     // Returning JSX
     return (
         <li>
-            <button>
-                <img src={img} alt={`Flag of ${enName}`} />
-                <div>
-                    <span>{nameState}</span>
-                    <span>{enName}</span>
+            <button data-selected={isSelected} className={'flex justify-between items-center gap-[20px] bg-white/10 hover:bg-white/20 transition-all duration-500 w-full p-[10px] data-[selected="true"]:hover:bg-white/40 data-[selected="true"]:bg-white/30'}>
+                <div className={'flex gap-[10px]'}>
+                    <img className={'aspect-square w-[30px] rounded-full'} src={img} alt={`Flag of ${enName}`} />
+                    <div>
+                        <span className={'block text-start  text-white text-[12px]'}>{nameState}</span>
+                        <span className={'block text-start text-white/20 text-[10px]'}>{enName}</span>
+                    </div>
                 </div>
                 {
                     (isSelected)
-                        ? <IconComponent name={'tick'} size={20} />
+                        ? <span className={'text-sky-400'}><IconComponent name={'tick'} size={20} /></span>
                         : false
                 }
             </button>

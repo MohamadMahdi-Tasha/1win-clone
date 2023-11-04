@@ -7,7 +7,9 @@ export default function HeaderComponent():ReactNode {
     // Returning JSX
     return (
         <header>
-            <TopsideComponent />
+            <div className={'max-w-container mx-auto p-[20px]'}>
+                <TopsideComponent />
+            </div>
         </header>
     );
 }

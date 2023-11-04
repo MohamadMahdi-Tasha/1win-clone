@@ -3,7 +3,7 @@ import {ReactNode} from "react";
 
 // Defining type of props
 interface propsType {
-    name: 'lock' | 'mobile' | 'arrow-right' | 'star-bag' | 'windows' | 'android' | 'apple' | 'chevron-down' | 'tick';
+    name: 'lock' | 'mobile' | 'arrow-right' | 'star-bag' | 'windows' | 'android' | 'apple' | 'chevron' | 'tick';
     size: number;
 }
 
@@ -53,7 +53,7 @@ export default function IconComponent({name, size}:propsType):ReactNode {
                 <path fill="currentColor" d="M15.86 11.93c-.01-1.85.827-3.246 2.52-4.275-.947-1.355-2.379-2.101-4.269-2.247-1.789-.141-3.744 1.043-4.46 1.043-.756 0-2.49-.993-3.85-.993C2.989 5.503 0 7.701 0 12.171c0 1.32.242 2.686.726 4.092.645 1.85 2.973 6.386 5.402 6.31 1.27-.03 2.167-.902 3.82-.902 1.603 0 2.435.902 3.85.902 2.45-.035 4.557-4.158 5.172-6.012-3.286-1.547-3.11-4.536-3.11-4.632zm-2.852-8.276C14.384 2.02 14.258.534 14.218 0c-1.215.07-2.621.827-3.423 1.759-.882.998-1.4 2.233-1.29 3.623 1.315.101 2.515-.574 3.503-1.728z" />
             </svg>
         );
-    } else if (name === 'chevron-down') {
+    } else if (name === 'chevron') {
         return (
             <svg viewBox="0 0 8 5" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width={size} height={size}>
                 <path fill="currentColor" d="M1.238 3.957a.75.75 0 11-.976-1.139L2.899.558a1 1 0 011.302 0l2.637 2.26a.75.75 0 01-.976 1.14L3.55 1.974 1.238 3.957z" />

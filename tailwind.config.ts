@@ -14,8 +14,16 @@ const config: Config = {
     theme: {
         extend: {
             maxWidth: {container: '1100px'},
-            colors: {theme: '#090f1e'},
             fontFamily: {primary: ['var(--font-sf-pro)', 'sans-serif']},
+            boxShadow: {galaxy: '0 5px 15px #c955ff66'},
+            colors: {
+                theme: '#090f1e',
+                yellow: '#ffb800',
+                lighterYellow: '#fff173',
+                violet: '#d062ff',
+                lightBlue: '#7bb0ff',
+                andriodLighterGreen: '#A9E200',
+            },
         }
     },
     plugins: [],

@@ -10,28 +10,28 @@ import LangDropdownComponent from "@/chunk/header/topside/langDropdownComponent"
 export default function TopsideComponent():ReactNode {
     // Returning JSX
     return (
-        <div>
-            <div>
+        <div className={'flex justify-between items-center gap-[20px] flex-wrap'}>
+            <div className={'flex items-center gap-[10px]'}>
                 <IconButtonComponent name={'lock'} />
                 <IconButtonComponent name={'mobile'} />
-                <div />
+                <div className={'w-[1px] h-[20px] bg-white/20'} />
                 <FreeMoneyComponent />
             </div>
-            <div>
+            <div className={'flex justify-between items-center gap-[20px] flex-wrap'}>
                 <PromotionsComponent />
-                <div />
-                <a href={'#'}>
+                <div className={'w-[1px] h-[20px] bg-white/20'} />
+                <a href={'#'} className={'flex gap-[10px]'}>
                     <div>
-                        <span>Application</span>
-                        <span>for Windows</span>
+                        <span className={'block text-white text-[12px]'}>Application</span>
+                        <span className={'block text-white/50 text-[11px]'}>for Windows</span>
                     </div>
-                    <IconComponent name={'windows'} size={20} />
+                    <span className={'text-white'}><IconComponent name={'windows'} size={30} /></span>
                 </a>
-                <div>
-                    <a href="#"><IconComponent name={'android'} size={10} /></a>
-                    <a href="#"><IconComponent name={'apple'} size={10} /></a>
+                <div className={'flex gap-[5px] bg-white/10 transition-all duration-500 hover:bg-white/50 rounded-[5px]'}>
+                    <a className={'w-[30px] aspect-square text-andriodLighterGreen flex items-center justify-center'} href="#"><IconComponent name={'android'} size={15} /></a>
+                    <a className={'w-[30px] aspect-square text-gray-300 flex items-center justify-center'} href="#"><IconComponent name={'apple'} size={15} /></a>
                 </div>
-                <div />
+                <div className={'w-[1px] h-[20px] bg-white/20'} />
                 <LangDropdownComponent />
             </div>
         </div>
