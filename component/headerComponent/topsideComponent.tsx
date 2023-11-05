@@ -1,5 +1,8 @@
+// Forcing NextJS to render this component as client side component
+'use client';
+
 // Importing part
-import {ReactNode} from "react";
+import {Dispatch, ReactNode, useEffect, useState} from "react";
 import FreeMoneyComponent from "@/chunk/header/topside/freeMoneyComponent";
 import IconButtonComponent from '@/chunk/header/topside/iconButtonComponent';
 import PromotionsComponent from '@/chunk/header/topside/promotionsComponent';
@@ -10,9 +13,27 @@ import Link from "next/link";
 import Image from "next/image";
 import LogoTypoImage from "@/public/img/img-logo-typo.svg";
 import EnImage from "@/public/img/flags/img-en.svg";
+import MobileNavComponent from "@/component/mobileNav";
+import {usePathname} from "next/navigation";
 
 // Creating and exporting top side of header component as default
 export default function TopsideComponent():ReactNode {
+    // Finding pathname of url
+    const pathName:string = usePathname();
+
+    // Defining state of component
+    const [isMobileNavOpened, setMobileNavOpened]:[boolean, Dispatch<boolean>] = useState(false);
+
+    // Using useEffect hook to close nav when pages change
+    useEffect(() => setMobileNavOpened(false), [pathName])
+
+    // Using useEffect hook to removing overflow from body to prevent scrolling
+    useEffect(() => {
+        (isMobileNavOpened)
+            ? document.body.classList.add('overflow-hidden')
+            : document.body.classList.remove('overflow-hidden')
+    }, [isMobileNavOpened])
+
     // Returning JSX
     return (
         <div className={'flex justify-between items-center gap-[20px] flex-wrap'}>
@@ -40,9 +61,10 @@ export default function TopsideComponent():ReactNode {
                 <div className={'w-[1px] h-[20px] bg-white/20'} />
                 <LangDropdownComponent />
             </div>
-            <button className={'lg:hidden flex items-center justify-center aspect-square w-[50px] h-[50px] text-white'}>
+            <button onClick={() => setMobileNavOpened(true)} className={'lg:hidden flex items-center justify-center aspect-square w-[50px] h-[50px] text-white'}>
                 <IconComponent name={'list'} size={20} />
             </button>
+            <MobileNavComponent isOpened={isMobileNavOpened} closeFN={() => setMobileNavOpened(false)} />
         </div>
     );
 }

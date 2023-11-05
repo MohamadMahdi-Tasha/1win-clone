@@ -38,7 +38,7 @@ export default function RootLayout({children}:propsType):ReactNode {
     // Returning JSX
     return (
         <html>
-            <body className={`bg-theme ${SFProFont.variable} font-primary`}>
+            <body className={`bg-theme ${SFProFont.variable} font-primary overflow-hidden`}>
                 <HeaderComponent />
                 {children}
             </body>

@@ -18,20 +18,20 @@ export default function IconLinkItemComponent({icon, name}:propsType):ReactNode 
     // Returning JSX
     return (
         <li>
-            <Link href={'#'}>
+            <Link className={'flex items-center justify-start gap-[10px]'} href={'#'}>
                 {
                     (icon === 'jet-game')
-                        ? <img src={JetGameIconImage.src} alt={'Lucky jet game icon'}/>
+                        ? <img className={'w-[50px] shrink-0 h-[50px] object-cover'} src={JetGameIconImage.src} alt={'Lucky jet game icon'}/>
                         : (icon === 'speed-game')
-                            ? <img src={SpeedGameIconImage.src} alt={'Speed game icon'}/>
-                            : <ColorfullIeconComponent name={icon} size={20} />
+                            ? <img className={'w-[50px] shrink-0 h-[50px] object-cover'} src={SpeedGameIconImage.src} alt={'Speed game icon'}/>
+                            : <span className={'shrink-0'}><ColorfullIeconComponent name={icon} size={50} /></span>
                 }
                 {
                     (icon === 'jet-game')
-                        ? <img src={JetGameImage.src} alt="Jet Game"/>
+                        ? <img className={'w-[20%]'} src={JetGameImage.src} alt="Jet Game"/>
                         : (icon === 'speed-game')
-                            ? <img src={SpeedGameImage.src} alt="Speed Game"/>
-                            : <span>{name}</span>
+                            ? <img className={'w-[20%]'} src={SpeedGameImage.src} alt="Speed Game"/>
+                            : <span className={'text-white text-[14px] font-bold truncate'}>{name}</span>
                 }
             </Link>
         </li>

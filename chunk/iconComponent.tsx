@@ -103,7 +103,7 @@ export default function IconComponent({name, size}:propsType):ReactNode {
         return (
             <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 30 30" aria-hidden="true">
                 <g fill="none" fillRule="evenodd">
-                    <rect width="30" height="30" rx="15" fill='url(&quot;#blue-gradient&quot;);'></rect>
+                    <rect width="30" height="30" rx="15" fill='currentColor'></rect>
                     <path fill="#FFF" fillRule="nonzero" d="M15 8.778c-3.928 0-7.111 2.586-7.111 5.778 0 1.377.594 2.638 1.583 3.63-.347 1.4-1.508 2.647-1.522 2.661a.22.22 0 00-.042.242.218.218 0 00.203.133c1.842 0 3.222-.883 3.906-1.428a8.472 8.472 0 002.983.54c3.928 0 7.111-2.587 7.111-5.778 0-3.192-3.183-5.778-7.111-5.778z"></path>
                 </g>
             </svg>
@@ -111,7 +111,7 @@ export default function IconComponent({name, size}:propsType):ReactNode {
     } else if (name === 'telegram') {
         return (
             <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 18 16" aria-hidden="true">
-                <path d="M17.949 1.374l-2.717 12.81c-.205.904-.739 1.13-1.498.704l-4.14-3.05-1.996 1.92c-.221.221-.406.406-.832.406l.297-4.215 7.671-6.931c.334-.298-.072-.462-.518-.165L4.733 8.824.65 7.546c-.888-.277-.904-.888.185-1.314L16.804.08c.739-.277 1.386.165 1.145 1.294z" fill='url(&quot;#social-tg-gradient&quot;);' />
+                <path d="M17.949 1.374l-2.717 12.81c-.205.904-.739 1.13-1.498.704l-4.14-3.05-1.996 1.92c-.221.221-.406.406-.832.406l.297-4.215 7.671-6.931c.334-.298-.072-.462-.518-.165L4.733 8.824.65 7.546c-.888-.277-.904-.888.185-1.314L16.804.08c.739-.277 1.386.165 1.145 1.294z" fill='currentColor' />
             </svg>
         );
     }
