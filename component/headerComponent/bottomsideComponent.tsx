@@ -15,6 +15,7 @@ import JetXGameImage from '@/public/img/header/bottomside/games/img-jetx.svg';
 import NavLinkComponent from '@/chunk/header/bottomside/navLinkComponent';
 import EnImage from '@/public/img/flags/img-en.svg';
 import {usePathname} from "next/navigation";
+import MobileNavComponent from "@/component/mobileNav";
 
 // Creating and exporting bottom side od header component as default
 export default function BottomsideComponent():ReactNode {
@@ -96,6 +97,7 @@ export default function BottomsideComponent():ReactNode {
                     Registration
                 </Link>
             </div>
+            <MobileNavComponent closeFN={() => alert('close')} />
         </nav>
     );
 }

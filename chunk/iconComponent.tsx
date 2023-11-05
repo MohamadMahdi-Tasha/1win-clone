@@ -3,7 +3,7 @@ import {ReactNode} from "react";
 
 // Defining type of props
 interface propsType {
-    name: 'lock' | 'mobile' | 'arrow-right' | 'star-bag' | 'windows' | 'android' | 'apple' | 'chevron' | 'tick' | 'plus' | 'list' | 'search';
+    name: 'lock' | 'mobile' | 'arrow-right' | 'star-bag' | 'windows' | 'android' | 'apple' | 'chevron' | 'tick' | 'plus' | 'list' | 'search' | 'person' | 'x' | 'chat' | 'telegram';
     size: number;
 }
 
@@ -81,6 +81,37 @@ export default function IconComponent({name, size}:propsType):ReactNode {
         return (
             <svg viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" width={size} height={size}>
                 <path fill={'currentColor'} d="M10.027 8.624c.033.025.064.053.094.083l2.829 2.829a1 1 0 01-1.414 1.414L8.707 10.12a1.01 1.01 0 01-.083-.094 5.5 5.5 0 111.403-1.403zM5.5 9a3.5 3.5 0 100-7 3.5 3.5 0 000 7z" />
+            </svg>
+        );
+    } else if (name === 'person') {
+        return (
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" aria-hidden="true" width={size} height={size}>
+                <path fill={'currentColor'} d="M7 6.25a3 3 0 110-6 3 3 0 010 6zm-6.75 6.9c.291-3.58 3.196-5.4 6.738-5.4 3.59 0 6.54 1.72 6.76 5.4.01.147 0 .6-.563.6H.795c-.187 0-.56-.406-.545-.6z"></path>
+            </svg>
+        );
+    } else if (name === 'x') {
+        return (
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" aria-hidden="true" width={size} height={size}>
+                <g fillRule="evenodd">
+                    <g fillRule="nonzero" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.7">
+                        <path fill={'currentColor'} d="M8.257.714L.714 8.257m7.543 0L.714.714"></path>
+                    </g>
+                </g>
+            </svg>
+        );
+    } else if (name === 'chat') {
+        return (
+            <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 30 30" aria-hidden="true">
+                <g fill="none" fillRule="evenodd">
+                    <rect width="30" height="30" rx="15" fill='url(&quot;#blue-gradient&quot;);'></rect>
+                    <path fill="#FFF" fillRule="nonzero" d="M15 8.778c-3.928 0-7.111 2.586-7.111 5.778 0 1.377.594 2.638 1.583 3.63-.347 1.4-1.508 2.647-1.522 2.661a.22.22 0 00-.042.242.218.218 0 00.203.133c1.842 0 3.222-.883 3.906-1.428a8.472 8.472 0 002.983.54c3.928 0 7.111-2.587 7.111-5.778 0-3.192-3.183-5.778-7.111-5.778z"></path>
+                </g>
+            </svg>
+        );
+    } else if (name === 'telegram') {
+        return (
+            <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 18 16" aria-hidden="true">
+                <path d="M17.949 1.374l-2.717 12.81c-.205.904-.739 1.13-1.498.704l-4.14-3.05-1.996 1.92c-.221.221-.406.406-.832.406l.297-4.215 7.671-6.931c.334-.298-.072-.462-.518-.165L4.733 8.824.65 7.546c-.888-.277-.904-.888.185-1.314L16.804.08c.739-.277 1.386.165 1.145 1.294z" fill='url(&quot;#social-tg-gradient&quot;);' />
             </svg>
         );
     }
