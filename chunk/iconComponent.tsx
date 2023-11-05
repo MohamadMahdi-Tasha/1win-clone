@@ -3,7 +3,7 @@ import {ReactNode} from "react";
 
 // Defining type of props
 interface propsType {
-    name: 'lock' | 'mobile' | 'arrow-right' | 'star-bag' | 'windows' | 'android' | 'apple' | 'chevron' | 'tick' | 'plus';
+    name: 'lock' | 'mobile' | 'arrow-right' | 'star-bag' | 'windows' | 'android' | 'apple' | 'chevron' | 'tick' | 'plus' | 'list' | 'search';
     size: number;
 }
 
@@ -69,6 +69,18 @@ export default function IconComponent({name, size}:propsType):ReactNode {
         return (
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" aria-hidden="true" width={size} height={size}>
                 <path fill={'currentColor'} d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z" />
+            </svg>
+        );
+    } else if (name === 'list') {
+        return (
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 19" aria-hidden="true" width={size} height={size}>
+                <path fill={'currentColor'} d="M19.5 16a1.5 1.5 0 010 3h-18a1.5 1.5 0 010-3h18zm0-8a1.5 1.5 0 010 3h-18a1.5 1.5 0 010-3h18zm0-8a1.5 1.5 0 010 3h-18a1.5 1.5 0 010-3h18z" />
+            </svg>
+        );
+    } else if (name === 'search') {
+        return (
+            <svg viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" width={size} height={size}>
+                <path fill={'currentColor'} d="M10.027 8.624c.033.025.064.053.094.083l2.829 2.829a1 1 0 01-1.414 1.414L8.707 10.12a1.01 1.01 0 01-.083-.094 5.5 5.5 0 111.403-1.403zM5.5 9a3.5 3.5 0 100-7 3.5 3.5 0 000 7z" />
             </svg>
         );
     }

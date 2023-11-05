@@ -6,7 +6,7 @@ import LinkItemComponent from "@/chunk/header/bottomside/linkDropdown/linkItemCo
 export default function LinkDropdownComponent():ReactNode {
     // Returning JSX
     return (
-        <li className={'relative group'}>
+        <li className={'relative group lg:block hidden'}>
             <button className={'bg-white/10 group-hover:opacity-50 px-[15px] py-[5px] text-[12px] rounded-[5px] text-white transition-all duration-500'}>
                 More
                 <span className={'text-white/50 ml-[5px]'}>...</span>

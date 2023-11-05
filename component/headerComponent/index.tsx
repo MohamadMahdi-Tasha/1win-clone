@@ -11,7 +11,7 @@ export default function HeaderComponent():ReactNode {
             <div className={'max-w-container mx-auto p-[20px]'}>
                 <TopsideComponent />
             </div>
-            <div className={'max-w-container mx-auto mt-[20px] px-[20px] sticky top-0'}>
+            <div className={'max-w-container mx-auto px-[20px] sticky top-0 lg:border-y-0 border-y border-y-white/20 lg:py-0 py-[20px]'}>
                 <BottomsideComponent />
             </div>
         </header>

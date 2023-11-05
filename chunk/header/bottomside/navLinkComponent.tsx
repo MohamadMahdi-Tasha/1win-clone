@@ -14,11 +14,11 @@ export default function NavLinkComponent({name, isImg = false, imgSrc}:propsType
     // Returning JSX
     return (
         <li>
-            <Link href={'#'} className={'flex justify-center items-center w-[50px]'}>
+            <Link href={'#'} className={(isImg) ? 'block lg:w-[50px] w-[100px]' : 'lg:flex justify-center items-center lg:w-[50px]'}>
                 {
                     (isImg)
                         ? <img className={'w-full'} src={imgSrc} alt={name} />
-                        : <span className={'block text-[12px] text-white truncate'}>{name}</span>
+                        : <span className={'block text-[12px] text-white lg:truncate whitespace-nowrap'}>{name}</span>
                 }
             </Link>
         </li>
