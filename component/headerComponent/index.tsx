@@ -10,6 +10,8 @@ export default function HeaderComponent():ReactNode {
         <header>
             <div className={'max-w-container mx-auto p-[20px]'}>
                 <TopsideComponent />
+            </div>
+            <div className={'max-w-container mx-auto mt-[20px] px-[20px] sticky top-0'}>
                 <BottomsideComponent />
             </div>
         </header>

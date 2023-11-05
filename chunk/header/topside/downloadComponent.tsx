@@ -12,7 +12,7 @@ export default function DownloadComponent():ReactNode {
                 <a className={'w-[30px] aspect-square text-andriodLighterGreen flex items-center justify-center'} href="#"><IconComponent name={'android'} size={15} /></a>
                 <a className={'w-[30px] aspect-square text-gray-300 flex items-center justify-center'} href="#"><IconComponent name={'apple'} size={15} /></a>
             </div>
-            <div className={'absolute top-[150%] left-[50%] -translate-x-[50%] bg-white rounded-[10px] w-[300px] shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-500 before-triangle invisible'}>
+            <div className={'absolute top-[150%] z-[20] left-[50%] -translate-x-[50%] bg-white rounded-[10px] w-[300px] shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-500 before-triangle invisible'}>
                 <img className={'w-full mb-[10px]'} src={BannerImage.src} alt="Download now !" />
                 <div className={'p-[10px]'}>
                     <p className={'text-black text-[12px] text-center'}>Visit the site from your smartphone, <br/> install the application right now and <br/> get $100 to the bonus account!</p>

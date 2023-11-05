@@ -16,7 +16,7 @@ import EnImage from '@/public/img/flags/img-en.svg';
 export default function BottomsideComponent():ReactNode {
     // Returning JSX
     return (
-        <nav className={'flex justify-between gap-[10px] items-center mt-[20px] bg-gradient-to-r from-lightTheme to-theme rounded-[20px] p-[10px]'}>
+        <nav className={'flex justify-between gap-[10px] items-center bg-gradient-to-r from-lightTheme to-theme rounded-[20px] p-[10px]'}>
             <div className={'flex items-center gap-[20px] shrink-0'}>
                 <div className={'flex items-center gap-[10px]'}>
                     <Link href="#"><Image className={'w-[70px] h-auto'} src={LogoTypoImage.src} alt={'Logo'} width={200} height={100} /></Link>
