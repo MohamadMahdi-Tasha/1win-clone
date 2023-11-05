@@ -39,14 +39,14 @@ export default function LangDropdownComponent():ReactNode {
     // Returning JSX
     return (
         <div className={'relative'}>
-            <button className={'h-[30px] px-[5px] bg-white/10 flex items-center rounded-[5px] gap-[10px]'}
+            <button className={'h-[30px] px-[5px] bg-lightTheme transition-all duration-500 hover:opacity-50 flex items-center rounded-[5px] gap-[10px]'}
                     onClick={() => {(isOpened) ? setOpened(false) : setOpened(true)}}
             >
                 <span className={'block text-[10px] text-white'}>EN</span>
                 <span className={'text-white rotate-180'}><IconComponent name={'chevron'} size={7} /></span>
                 <img className={'aspect-square w-[20px]'} src={EnImage.src} alt="Flag of england"/>
             </button>
-            <div data-opened={isOpened} className={'absolute top-[130%] right-0 bg-white/10 overflow-hidden rounded-[20px] w-[300px] h-[500px] p-[20px] transition-all duration-500 data-[opened="false"]:opacity-0 data-[opened="true"]:opacity-100 data-[opened="false"]:invisible data-[opened="true"]:visible'}>
+            <div data-opened={isOpened} className={'absolute top-[130%] shadow-lg right-0 bg-lightTheme overflow-hidden rounded-[20px] w-[300px] h-[500px] p-[20px] transition-all duration-500 data-[opened="false"]:opacity-0 data-[opened="true"]:opacity-100 data-[opened="false"]:invisible data-[opened="true"]:visible'}>
                 <div className={'overflow-auto w-full h-full pr-[10px] lang-dropdown'}>
                     <span className={'block truncate text-white text-[15px] font-bold mb-[15px]'}>Suggested languages</span>
                     <ul className={'rounded-[20px] overflow-hidden'}>

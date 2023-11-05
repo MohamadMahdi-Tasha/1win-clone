@@ -7,7 +7,7 @@ import PromotionsImage from '@/public/img/header/topside/img-promotions.png';
 export default function PromotionsComponent():ReactNode {
     // Returning JSX
     return (
-        <a className={'h-[30px] flex justify-between relative pr-[60px] items-center rounded-[50rem] bg-white/10'} href={'#'}>
+        <a className={'h-[30px] flex justify-between relative pr-[60px] items-center rounded-[50rem] bg-lightTheme'} href={'#'}>
             <div className={'h-[40px] w-[40px] aspect-square mr-[10px] flex justify-center items-center text-white rounded-full bg-gradient-to-r from-violet to-lightBlue'}>
                 <IconComponent name={'star-bag'} size={15} />
             </div>

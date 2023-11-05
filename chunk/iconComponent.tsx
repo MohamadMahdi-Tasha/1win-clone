@@ -3,7 +3,7 @@ import {ReactNode} from "react";
 
 // Defining type of props
 interface propsType {
-    name: 'lock' | 'mobile' | 'arrow-right' | 'star-bag' | 'windows' | 'android' | 'apple' | 'chevron' | 'tick';
+    name: 'lock' | 'mobile' | 'arrow-right' | 'star-bag' | 'windows' | 'android' | 'apple' | 'chevron' | 'tick' | 'plus';
     size: number;
 }
 
@@ -63,6 +63,12 @@ export default function IconComponent({name, size}:propsType):ReactNode {
         return (
             <svg viewBox="0 0 11 8" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width={size} height={size}>
                 <path fill={'currentColor'} d="M8.873.335a.986.986 0 111.482 1.302L5.128 7.582a.986.986 0 01-1.4.081L.324 4.594A.986.986 0 011.647 3.13l2.66 2.4L8.873.335z" />
+            </svg>
+        );
+    } else if (name === 'plus') {
+        return (
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" aria-hidden="true" width={size} height={size}>
+                <path fill={'currentColor'} d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z" />
             </svg>
         );
     }

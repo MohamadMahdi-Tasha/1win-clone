@@ -18,6 +18,7 @@ const config: Config = {
             boxShadow: {galaxy: '0 5px 15px #c955ff66'},
             colors: {
                 theme: '#090f1e',
+                lightTheme: '#192033',
                 yellow: '#ffb800',
                 lighterYellow: '#fff173',
                 violet: '#d062ff',
