@@ -14,11 +14,11 @@ export default function LinkItemComponent({isNew = false, name, link}:propsType)
     // Returning JSX
     return (
         <li>
-            <Link href={link}>
-                {name}
+            <Link className={`block px-[10px] w-full py-[5px] bg-white duration-500 transition-all hover:bg-gray-300 ${(isNew) ? 'flex justify-between items-center gap-[10px]' : false}`} href={link}>
+                <span className={'truncate block text-[12px] text-theme'}>{name}</span>
                 {
                     (isNew)
-                        ? <span>NEW</span>
+                        ? <span className={'bg-gradient-to-r from-violet to-lightBlue block text-[10px] text-white px-[10px] py-[3px] rounded-[5px]'}>NEW</span>
                         : false
                 }
             </Link>

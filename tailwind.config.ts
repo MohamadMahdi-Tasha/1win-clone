@@ -13,7 +13,7 @@ const config: Config = {
     ],
     theme: {
         extend: {
-            maxWidth: {container: '1100px'},
+            maxWidth: {container: '1884px'},
             fontFamily: {primary: ['var(--font-sf-pro)', 'sans-serif']},
             boxShadow: {galaxy: '0 5px 15px #c955ff66'},
             colors: {
@@ -24,6 +24,8 @@ const config: Config = {
                 violet: '#d062ff',
                 lightBlue: '#7bb0ff',
                 andriodLighterGreen: '#A9E200',
+                green: '#31bc69',
+                darkerGreen: '#089e4e'
             },
         }
     },
