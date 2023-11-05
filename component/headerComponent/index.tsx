@@ -7,13 +7,17 @@ import BottomsideComponent from "@/component/headerComponent/bottomsideComponent
 export default function HeaderComponent():ReactNode {
     // Returning JSX
     return (
-        <header>
-            <div className={'max-w-container mx-auto p-[20px]'}>
-                <TopsideComponent />
+        <>
+            <header>
+                <div className={'max-w-container mx-auto p-[20px]'}>
+                    <TopsideComponent />
+                </div>
+            </header>
+            <div className={'lg:sticky top-0 left-0 w-full'}>
+                <div className={'max-w-container mx-auto px-[20px] lg:border-y-0 border-y border-y-white/20 lg:py-0 py-[20px]'}>
+                    <BottomsideComponent />
+                </div>
             </div>
-            <div className={'max-w-container mx-auto px-[20px] sticky top-0 lg:border-y-0 border-y border-y-white/20 lg:py-0 py-[20px]'}>
-                <BottomsideComponent />
-            </div>
-        </header>
+        </>
     );
 }

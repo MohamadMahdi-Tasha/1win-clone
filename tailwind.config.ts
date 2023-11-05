@@ -15,7 +15,11 @@ const config: Config = {
         extend: {
             maxWidth: {container: '1884px'},
             fontFamily: {primary: ['var(--font-sf-pro)', 'sans-serif']},
-            boxShadow: {galaxy: '0 5px 15px #c955ff66'},
+            boxShadow: {
+                galaxy: '0 5px 15px #c955ff66',
+                blueNeon: '0 6px 22px #056dda4d',
+                greenNeon: '0 6px 18px #0ea1514d'
+            },
             colors: {
                 theme: '#090f1e',
                 lightTheme: '#192033',
@@ -23,6 +27,7 @@ const config: Config = {
                 lighterYellow: '#fff173',
                 violet: '#d062ff',
                 lightBlue: '#7bb0ff',
+                blue: '#0095ff',
                 andriodLighterGreen: '#A9E200',
                 green: '#31bc69',
                 darkerGreen: '#089e4e'

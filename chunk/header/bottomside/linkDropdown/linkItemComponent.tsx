@@ -18,7 +18,7 @@ export default function LinkItemComponent({isNew = false, name, link}:propsType)
                 <span className={'truncate block text-[12px] text-theme'}>{name}</span>
                 {
                     (isNew)
-                        ? <span className={'bg-gradient-to-r from-violet to-lightBlue block text-[10px] text-white px-[10px] py-[3px] rounded-[5px]'}>NEW</span>
+                        ? <span className={'bg-gradient-to-r from-violet to-lightBlue shadow-galaxy block text-[10px] text-white px-[10px] py-[3px] rounded-[5px]'}>NEW</span>
                         : false
                 }
             </Link>
