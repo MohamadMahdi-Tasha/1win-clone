@@ -7,7 +7,7 @@ import FreeMoneyComponent from "@/chunk/header/topside/freeMoneyComponent";
 import IconButtonComponent from '@/chunk/header/topside/iconButtonComponent';
 import PromotionsComponent from '@/chunk/header/topside/promotionsComponent';
 import IconComponent from "@/chunk/iconComponent";
-import LangDropdownComponent from "../../chunk/header/langDropdownComponent";
+import LangDropdownComponent from "../../chunk/langDropdownComponent";
 import DownloadComponent from '@/chunk/header/topside/downloadComponent';
 import Link from "next/link";
 import Image from "next/image";

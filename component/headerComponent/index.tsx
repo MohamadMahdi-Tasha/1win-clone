@@ -35,7 +35,7 @@ export default function HeaderComponent():ReactNode {
                     <TopsideComponent />
                 </div>
             </header>
-            <div className={'lg:sticky top-0 left-0 w-full'} ref={stickyPartRef}>
+            <div className={'lg:sticky top-0 left-0 w-full z-[50]'} ref={stickyPartRef}>
                 <div className={'max-w-container mx-auto px-[20px] lg:border-y-0 border-y border-y-white/20 lg:py-0 py-[20px]'}>
                     <BottomsideComponent isStickedToTop={isStickedToTop} />
                 </div>

@@ -6,7 +6,7 @@ import IconLinkItemComponent from "@/chunk/mobileNav/iconLinkItemComponent";
 import BannerComponent from "@/chunk/mobileNav/bannerComponent";
 import ApplicationBannerImage from '@/public/img/mobileNav/img-banner-mobile.png';
 import EnImage from "@/public/img/flags/img-en.svg";
-import LangDropdownComponent from "@/chunk/header/langDropdownComponent";
+import LangDropdownComponent from "../../chunk/langDropdownComponent";
 
 // Defining type of props
 interface propsType {
@@ -21,7 +21,7 @@ export default function MobileNavComponent({closeFN, isOpened}:propsType):ReactN
         <nav className={'lg:hidden block z-[30] fixed top-0 left-0'}>
             <div data-opened={isOpened} className={'fixed w-full h-full top-0 left-0 bg-theme/80 z-[1] transition-all duration-500 data-[opened="true"]:opacity-100 data-[opened="true"]:visible data-[opened="false"]:opacity-0 data-[opened="false"]:invisible'} onClick={closeFN} />
             <nav data-opened={isOpened} className={'z-[2] fixed top-0 right-0 w-[75%] shadow-lg rounded-l-[30px] bg-lightTheme h-full overflow-auto transition-all duration-500 data-[opened="true"]:opacity-100 data-[opened="true"]:visible data-[opened="false"]:opacity-0 data-[opened="false"]:invisible'}>
-                <div className={'sticky top-0 left-0 w-full flex items-center justify-between bg-lightTheme flex-wrap p-[20px] gap-[10px]'}>
+                <div className={'sticky z-[30] top-0 left-0 w-full flex items-center justify-between bg-lightTheme flex-wrap p-[20px] gap-[10px]'}>
                     <div className={'flex items-center gap-[10px]'}>
                         <div className={'aspect-square w-[30px] rounded-[10px] flex justify-center items-center bg-white/10 text-white'}>
                             <IconComponent name={'person'} size={10} />
