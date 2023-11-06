@@ -16,8 +16,13 @@ import NavLinkComponent from '@/chunk/header/bottomside/navLinkComponent';
 import EnImage from '@/public/img/flags/img-en.svg';
 import {usePathname} from "next/navigation";
 
+// Defining type of props
+interface propsType {
+    isStickedToTop: boolean;
+}
+
 // Creating and exporting bottom side od header component as default
-export default function BottomsideComponent():ReactNode {
+export default function BottomsideComponent({isStickedToTop}:propsType):ReactNode {
     // Finding pathname of url
     const pathName:string = usePathname();
 
@@ -43,7 +48,7 @@ export default function BottomsideComponent():ReactNode {
 
     // Returning JSX
     return (
-        <nav className={'flex lg:flex-row flex-col-reverse justify-between gap-[10px] lg:items-center lg:bg-gradient-to-r bg-theme from-lightTheme to-theme lg:rounded-[10px] lg:p-[10px]'}>
+        <nav data-sticked={isStickedToTop} className={'flex lg:flex-row flex-col-reverse justify-between gap-[10px] lg:items-center lg:bg-gradient-to-r bg-theme from-lightTheme to-theme lg:data-[sticked="true"]:rounded-b-[10px] transition-all duration-500 lg:data-[sticked="false"]:rounded-[10px] lg:p-[10px]'}>
             <div className={'flex items-center gap-[20px]'}>
                 <div className={'lg:flex hidden items-center gap-[10px]'}>
                     <Link href="#"><Image className={'w-[70px] h-auto'} src={LogoTypoImage.src} alt={'Logo'} width={200} height={100} /></Link>
