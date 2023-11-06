@@ -7,7 +7,7 @@ import FreeMoneyComponent from "@/chunk/header/topside/freeMoneyComponent";
 import IconButtonComponent from '@/chunk/header/topside/iconButtonComponent';
 import PromotionsComponent from '@/chunk/header/topside/promotionsComponent';
 import IconComponent from "@/chunk/iconComponent";
-import LangDropdownComponent from "@/chunk/header/topside/langDropdownComponent";
+import LangDropdownComponent from "../../chunk/header/langDropdownComponent";
 import DownloadComponent from '@/chunk/header/topside/downloadComponent';
 import Link from "next/link";
 import Image from "next/image";
@@ -59,7 +59,7 @@ export default function TopsideComponent():ReactNode {
                 </a>
                 <DownloadComponent />
                 <div className={'w-[1px] h-[20px] bg-white/20'} />
-                <LangDropdownComponent />
+                <LangDropdownComponent position={'bottom'} />
             </div>
             <button onClick={() => setMobileNavOpened(true)} className={'lg:hidden flex items-center justify-center aspect-square w-[50px] h-[50px] text-white'}>
                 <IconComponent name={'list'} size={20} />

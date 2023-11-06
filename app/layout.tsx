@@ -5,6 +5,7 @@ import localFont from 'next/font/local'
 import {NextFontWithVariable} from "next/dist/compiled/@next/font";
 import HeaderComponent from "@/component/headerComponent";
 import '@/app/index.css';
+import FooterComponent from "@/component/footer";
 
 // Defining font (SF Pro)
 const SFProFont:NextFontWithVariable = localFont({
@@ -41,6 +42,7 @@ export default function RootLayout({children}:propsType):ReactNode {
             <body className={`bg-theme ${SFProFont.variable} font-primary overflow-hidden`}>
                 <HeaderComponent />
                 {children}
+                <FooterComponent />
             </body>
         </html>
     );

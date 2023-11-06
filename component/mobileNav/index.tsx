@@ -6,6 +6,7 @@ import IconLinkItemComponent from "@/chunk/mobileNav/iconLinkItemComponent";
 import BannerComponent from "@/chunk/mobileNav/bannerComponent";
 import ApplicationBannerImage from '@/public/img/mobileNav/img-banner-mobile.png';
 import EnImage from "@/public/img/flags/img-en.svg";
+import LangDropdownComponent from "@/chunk/header/langDropdownComponent";
 
 // Defining type of props
 interface propsType {
@@ -19,15 +20,15 @@ export default function MobileNavComponent({closeFN, isOpened}:propsType):ReactN
     return (
         <nav className={'lg:hidden block z-[30] fixed top-0 left-0'}>
             <div data-opened={isOpened} className={'fixed w-full h-full top-0 left-0 bg-theme/80 z-[1] transition-all duration-500 data-[opened="true"]:opacity-100 data-[opened="true"]:visible data-[opened="false"]:opacity-0 data-[opened="false"]:invisible'} onClick={closeFN} />
-            <nav data-opened={isOpened} className={'z-[2] fixed top-0 right-0 w-[50%] shadow-lg rounded-l-[30px] bg-lightTheme h-full overflow-auto transition-all duration-500 data-[opened="true"]:opacity-100 data-[opened="true"]:visible data-[opened="false"]:opacity-0 data-[opened="false"]:invisible'}>
-                <div className={'sticky top-0 left-0 w-full flex items-center justify-between bg-lightTheme  p-[20px]'}>
+            <nav data-opened={isOpened} className={'z-[2] fixed top-0 right-0 w-[75%] shadow-lg rounded-l-[30px] bg-lightTheme h-full overflow-auto transition-all duration-500 data-[opened="true"]:opacity-100 data-[opened="true"]:visible data-[opened="false"]:opacity-0 data-[opened="false"]:invisible'}>
+                <div className={'sticky top-0 left-0 w-full flex items-center justify-between bg-lightTheme flex-wrap p-[20px] gap-[10px]'}>
                     <div className={'flex items-center gap-[10px]'}>
                         <div className={'aspect-square w-[30px] rounded-[10px] flex justify-center items-center bg-white/10 text-white'}>
                             <IconComponent name={'person'} size={10} />
                         </div>
                         <Link className={'text-white rounded-[10px] text-[12px] bg-green px-[20px] truncate py-[5px]'} href={'/'}>Registration</Link>
                     </div>
-                    <button onClick={closeFN} className={'w-[50px] h-[50px] flex justify-center items-center text-white'}>
+                    <button onClick={closeFN} className={'text-white'}>
                         <IconComponent name={'x'} size={20} />
                     </button>
                 </div>
@@ -65,11 +66,7 @@ export default function MobileNavComponent({closeFN, isOpened}:propsType):ReactN
                     </div>
                     <div className={'flex justify-between items-center'}>
                         <Link className={'w-[30px] h-[30px] bg-white/10 text-white rounded-[5px] flex justify-center items-center'} href={'#'}><IconComponent name={'telegram'} size={15} /></Link>
-                        <button className={'h-[30px] px-[5px] bg-white/10 transition-all duration-500 hover:opacity-50 flex items-center rounded-[5px] gap-[10px]'}>
-                            <span className={'block text-[10px] text-white'}>EN</span>
-                            <span className={'text-white rotate-180'}><IconComponent name={'chevron'} size={7} /></span>
-                            <img className={'aspect-square w-[20px]'} src={EnImage.src} alt="Flag of england"/>
-                        </button>
+                        <LangDropdownComponent />
                     </div>
                 </div>
             </nav>
