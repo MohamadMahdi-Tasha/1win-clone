@@ -14,6 +14,25 @@ import ItfImage from '@/public/img/footer/sponsers/img-itf.svg';
 import FifaImage from '@/public/img/footer/sponsers/img-fifa.svg';
 import LangDropdownComponent from "../../chunk/langDropdownComponent";
 
+import ApplepayImage from '@/public/img/footer/companys/img-applepay.svg';
+import AstropayImage from '@/public/img/footer/companys/img-astropay.svg';
+import BitcoinImage from '@/public/img/footer/companys/img-bitcoin.svg';
+import DiscoverImage from '@/public/img/footer/companys/img-discover.svg';
+import EtherImage from '@/public/img/footer/companys/img-ether.svg';
+import FkImage from '@/public/img/footer/companys/img-fk.svg';
+import GpayImage from '@/public/img/footer/companys/img-gpay.svg';
+import IntracImage from '@/public/img/footer/companys/img-intrac.svg';
+import JbcImage from '@/public/img/footer/companys/img-jbc.svg';
+import MuchbetterImage from '@/public/img/footer/companys/img-muchbetter.svg';
+import PayeerImage from '@/public/img/footer/companys/img-payeer.svg';
+import PaypalImage from '@/public/img/footer/companys/img-paypal.svg';
+import PiastrixImage from '@/public/img/footer/companys/img-piastrix.svg';
+import QiwiImage from '@/public/img/footer/companys/img-qiwi.svg';
+import SkrillImage from '@/public/img/footer/companys/img-skrill.svg';
+import TetherImage from '@/public/img/footer/companys/img-tether.svg';
+import VisaImage from '@/public/img/footer/companys/img-visa.svg';
+import WebmoneyImage from '@/public/img/footer/companys/img-webmoney.svg';
+
 // Creating and exporting middle side of footer component as default
 export default function MiddleSideComponent():ReactNode {
     // Returning JSX
@@ -45,8 +64,25 @@ export default function MiddleSideComponent():ReactNode {
                 </div>
             </div>
             <div className={'gradiant-divider'} />
-            <div>
-
+            <div className={'flex gap-[20px] justify-between items-center py-[20px]'}>
+                <div><img className={'w-full h-[35px] grayscale hover:grayscale-0 transition-all duration-500'} src={ApplepayImage.src} alt="Applepay image"/></div>
+                <div><img className={'w-full h-[35px] grayscale hover:grayscale-0 transition-all duration-500'} src={AstropayImage.src} alt="Astropay image"/></div>
+                <div><img className={'w-full h-[35px] grayscale hover:grayscale-0 transition-all duration-500'} src={BitcoinImage.src} alt="Bitcoin image"/></div>
+                <div><img className={'w-full h-[35px] grayscale hover:grayscale-0 transition-all duration-500'} src={DiscoverImage.src} alt="Discover image"/></div>
+                <div><img className={'w-full h-[35px] grayscale hover:grayscale-0 transition-all duration-500'} src={EtherImage.src} alt="Ether image"/></div>
+                <div><img className={'w-full h-[35px] grayscale hover:grayscale-0 transition-all duration-500'} src={FkImage.src} alt="Fk image"/></div>
+                <div><img className={'w-full h-[35px] grayscale hover:grayscale-0 transition-all duration-500'} src={GpayImage.src} alt="Gpay image"/></div>
+                <div><img className={'w-full h-[35px] grayscale hover:grayscale-0 transition-all duration-500'} src={IntracImage.src} alt="Intrac image"/></div>
+                <div><img className={'w-full h-[35px] grayscale hover:grayscale-0 transition-all duration-500'} src={JbcImage.src} alt="Jbc image"/></div>
+                <div><img className={'w-full h-[35px] grayscale hover:grayscale-0 transition-all duration-500'} src={MuchbetterImage.src} alt="Muchbetter image"/></div>
+                <div><img className={'w-full h-[35px] grayscale hover:grayscale-0 transition-all duration-500'} src={PayeerImage.src} alt="Payeer image"/></div>
+                <div><img className={'w-full h-[35px] grayscale hover:grayscale-0 transition-all duration-500'} src={PaypalImage.src} alt="Paypal image"/></div>
+                <div><img className={'w-full h-[35px] grayscale hover:grayscale-0 transition-all duration-500'} src={PiastrixImage.src} alt="Piastrix image"/></div>
+                <div><img className={'w-full h-[35px] grayscale hover:grayscale-0 transition-all duration-500'} src={QiwiImage.src} alt="Qiwi image"/></div>
+                <div><img className={'w-full h-[35px] grayscale hover:grayscale-0 transition-all duration-500'} src={SkrillImage.src} alt="Skrill image"/></div>
+                <div><img className={'w-full h-[35px] grayscale hover:grayscale-0 transition-all duration-500'} src={TetherImage.src} alt="Tether image"/></div>
+                <div><img className={'w-full h-[35px] grayscale hover:grayscale-0 transition-all duration-500'} src={VisaImage.src} alt="Visa image"/></div>
+                <div><img className={'w-full h-[35px] grayscale hover:grayscale-0 transition-all duration-500'} src={WebmoneyImage.src} alt="Webmoney image"/></div>
             </div>
         </>
     );
