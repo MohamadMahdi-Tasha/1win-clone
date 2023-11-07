@@ -3,6 +3,8 @@ import {ReactNode} from "react";
 import LogoImage from '@/public/img/img-logo-typo.svg';
 import Image from 'next/image';
 import DownloadComponent from "@/chunk/footer/topSide/downloadComponent";
+import DownloadHoverDropdownComponent from "@/chunk/downloadHoverDropdownComponent";
+import IconComponent from "@/chunk/iconComponent";
 
 // Creating and exporting top side of footer component as default
 export default function TopSideComponent():ReactNode {
@@ -10,16 +12,16 @@ export default function TopSideComponent():ReactNode {
     return (
         <div>
             <div className={'flex gap-[10px] items-center'}>
-                <Image className={'w-[50px]'} width={200} height={100} src={LogoImage.src} alt={'1Win Logo'} />
+                <Image className={'lg:w-[50px] w-[70px]'} width={200} height={100} src={LogoImage.src} alt={'1Win Logo'} />
                 <div className={'gradiant-divider'} />
             </div>
-            <div className={'grid grid-cols-7 gap-[20px] py-[20px]'}>
+            <div className={'grid lg:grid-cols-7 grid-cols-1 gap-[20px] py-[20px]'}>
                 <div>
                     <h5 className={'footer-title mb-[5px]'}>24/7 support</h5>
                     <p className={'footer-paragraph'}>Contact us if you still have any questions</p>
                 </div>
-                <div className={'col-span-2'}>
-                    <h6 className={'footer-subtitle mb-[40px]'}>SUPPORT CONTACTS</h6>
+                <div className={'lg:col-span-2'}>
+                    <h6 className={'footer-subtitle lg:mb-[40px] mb-[10px]'}>SUPPORT CONTACTS</h6>
                     <ul className={'flex flex-col gap-[8px]'}>
                         <li className={'flex gap-[10px] justify-between items-center flex-wrap'}>
                             <h6 className={'footer-subtitle'}>Technical support</h6>
@@ -40,17 +42,17 @@ export default function TopSideComponent():ReactNode {
                     </ul>
                 </div>
                 <div>
-                    <h6 className={'footer-subtitle mb-[40px]'}>INFORMATION</h6>
-                    <ul className={'flex flex-col gap-[8px]'}>
+                    <h6 className={'footer-subtitle lg:mb-[40px] mb-[10px]'}>INFORMATION</h6>
+                    <ul className={'lg:flex grid grid-cols-2 flex-col gap-[8px]'}>
                         <li><a className={'footer-subtitle-white block'} href="#">Rules</a></li>
                         <li><a className={'footer-subtitle-white block'} href="#">Promotions and bonuses</a></li>
-                        <li><a className={'footer-subtitle-white block'} href="#">Mobile version</a></li>
+                        <li className={'lg:block hidden'}><a className={'footer-subtitle-white block'} href="#">Mobile version</a></li>
                         <li><a className={'footer-subtitle-white block'} href="#">Affiliate program</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h6 className={'footer-subtitle mb-[40px]'}>CATEGORIES</h6>
-                    <div className={'flex gap-[8px]'}>
+                    <h6 className={'footer-subtitle lg:mb-[40px] mb-[10px]'}>CATEGORIES</h6>
+                    <div className={'lg:flex grid grid-cols-2 flex-col gap-[8px]'}>
                         <ul className={'flex gap-[8px] flex-col'}>
                             <li className={'block'}><a className={'footer-subtitle-white block truncate'} href="#">Live</a></li>
                             <li className={'block'}><a className={'footer-subtitle-white block truncate'} href="#">Sports</a></li>
@@ -63,11 +65,14 @@ export default function TopSideComponent():ReactNode {
                         </ul>
                     </div>
                 </div>
-                <div className={'col-span-2 h-[96px] flex gap-[10px]'}>
-                    <div className={'w-[50%] relative'}>
-                        <div className={'flex gap-[5px] flex-col group'}>
+                <div className={'lg:col-span-2 lg:h-[96px] lg:flex gap-[10px]'}>
+                    <div className={'lg:w-[50%] w-full relative group'}>
+                        <div className={'flex gap-[5px] lg:flex-col'}>
                             <DownloadComponent name={'ios'} isLarge={false} />
                             <DownloadComponent name={'android'} isLarge={false} />
+                        </div>
+                        <div className={'lg:block hidden'}>
+                            <DownloadHoverDropdownComponent position={'top'} />
                         </div>
                     </div>
                     <DownloadComponent name={'windows'} isLarge />

@@ -14,7 +14,7 @@ export default function DownloadComponent({name, isLarge}:propsType):ReactNode {
     // Conditional rendering
     if (!isLarge) {
         return (
-            <a href={'#'} className={'px-[10px] py-[5px] flex items-center justify-between gap-[5px] border rounded-[10px] border-white/20'}>
+            <a href={'#'} className={'px-[10px] py-[5px] flex items-center justify-between gap-[5px] border rounded-[10px] border-white/20 w-full'}>
                 <div className={'flex gap-[10px] items-center'}>
                     <ColorfullIconComponent name={(name === 'ios') ? 'ios' : (name === 'windows') ? "windows" : "android-typo"} size={20} />
                     <div>
@@ -27,7 +27,7 @@ export default function DownloadComponent({name, isLarge}:propsType):ReactNode {
         );
     } else {
         return (
-            <a className={'p-[10px] border rounded-[10px] border-white/20 block w-[50%]'} href={'#'}>
+            <a className={'p-[10px] border rounded-[10px] border-white/20 lg:block hidden w-[50%]'} href={'#'}>
                 <div className={'flex justify-between gap-[10px] mb-[10px]'}>
                     <ColorfullIconComponent name={(name === 'ios') ? 'ios' : (name === 'windows') ? "windows" : "android-typo"} size={20} />
                     <span className={'rotate-90 text-white/60'}><IconComponent name={'chevron'} size={10} /></span>

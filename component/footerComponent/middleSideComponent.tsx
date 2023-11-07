@@ -38,24 +38,46 @@ export default function MiddleSideComponent():ReactNode {
     // Returning JSX
     return (
         <>
-            <div className={'flex justify-between gap-[10px] flex-wrap py-[20px]'}>
-                <ul className={'flex gap-[10px]'}>
-                    <li><a className={'rounded-[10px] text-white w-[30px] h-[30px] flex justify-center items-center bg-gradient-to-r from-telegramLightBlue to-telegramBlue'} href="#"><IconComponent name={'telegram'} size={15} /></a></li>
-                    <li><a className={'rounded-[10px] text-white w-[30px] h-[30px] flex justify-center items-center bg-gradient-to-tr from-instagramYellow via-instagramPink to-instagramPurple'} href="#"><IconComponent name={'instagram'} size={15} /></a></li>
-                    <li><a className={'rounded-[10px] text-white w-[30px] h-[30px] flex justify-center items-center bg-gradient-to-tr from-facebookLightBlue to-facebookBlue'} href="#"><IconComponent name={'facebook'} size={15} /></a></li>
-                    <li><a className={'rounded-[10px] text-black bg-white w-[30px] h-[30px] flex justify-center items-center'} href="#"><IconComponent name={'twitter-x'} size={15} /></a></li>
+            <div className={'flex lg:flex-row flex-col-reverse justify-between gap-[10px] flex-wrap lg:py-[20px]'}>
+                <ul className={'lg:flex grid grid-cols-4 gap-[10px] lg:pb-0 lg:pt-0 pt-[15px] pb-[20px]'}>
+                    <li>
+                        <a className={'rounded-[10px] lg:shadow-none shadow-blueNeon text-white lg:w-[30px] gap-[10px] lg:h-[30px] flex lg:py-0 lg:px-0 py-[15px] px-[10px] justify-center items-center bg-gradient-to-r from-telegramLightBlue to-telegramBlue'} href="#">
+                            <span className={'shrink-0'}><IconComponent name={'telegram'} size={15} /></span>
+                            <span className={'text-[12px] truncate lg:hidden block'}>Telegram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a className={'rounded-[10px] lg:shadow-none shadow-galaxy text-white lg:w-[30px] gap-[10px] lg:h-[30px] flex lg:py-0 lg:px-0 py-[15px] px-[10px] justify-center items-center bg-gradient-to-tr from-instagramYellow via-instagramPink to-instagramPurple'} href="#">
+                            <span className={'shrink-0'}><IconComponent name={'instagram'} size={15} /></span>
+                            <span className={'text-[12px] truncate lg:hidden block'}>Instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a className={'rounded-[10px] lg:shadow-none shadow-blueNeon text-white lg:w-[30px] gap-[10px] lg:h-[30px] flex lg:py-0 lg:px-0 py-[15px] px-[10px] justify-center items-center bg-gradient-to-tr from-facebookLightBlue to-facebookBlue'} href="#">
+                            <span className={'shrink-0'}><IconComponent name={'facebook'} size={15} /></span>
+                            <span className={'text-[12px] truncate lg:hidden block'}>Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a className={'rounded-[10px] lg:shadow-none shadow-[0_0_0] shadow-white text-black bg-white lg:w-[30px] gap-[10px] lg:h-[30px] lg:py-0 lg:px-0 py-[15px] px-[10px] flex justify-center items-center'} href="#">
+                            <span className={'shrink-0'}><IconComponent name={'twitter-x'} size={15} /></span>
+                            <span className={'text-[12px] truncate lg:hidden block'}>X (twitter)</span>
+                        </a>
+                    </li>
                 </ul>
-                <ul className={'flex gap-[20px]'}>
-                    <li><img className={'w-[50px] h-[30px]'} src={UefaImage.src} alt="Ueafa logo"/></li>
-                    <li><img className={'w-[50px] h-[30px]'} src={UfcImage.src} alt="Ufc logo"/></li>
-                    <li><img className={'w-[50px] h-[30px]'} src={WtaImage.src} alt="Wta logo"/></li>
-                    <li><img className={'w-[50px] h-[30px]'} src={FibaImage.src} alt="Fiba logo"/></li>
-                    <li><img className={'w-[50px] h-[30px]'} src={NhlImage.src} alt="Nhl logo"/></li>
-                    <li><img className={'w-[50px] h-[30px]'} src={AtpImage.src} alt="Atp logo"/></li>
-                    <li><img className={'w-[50px] h-[30px]'} src={ItfImage.src} alt="Itf logo"/></li>
-                    <li><img className={'w-[50px] h-[30px]'} src={FifaImage.src} alt="Fifa logo"/></li>
+                <span className={'text-center text-white/60 text-[13px] lg:hidden block truncate'}>Social networks</span>
+                <div className={'gradiant-divider lg:hidden block'} />
+                <ul className={'flex lg:justify-start justify-between lg:overflow-hidden overflow-auto no-scroll gap-[20px]'}>
+                    <li className={'lg:shrink shrink-0'}><img className={'lg:w-[50px] w-[70px] lg:h-[30px] h-[50px]'} src={UefaImage.src} alt="Ueafa logo"/></li>
+                    <li className={'lg:shrink shrink-0'}><img className={'lg:w-[50px] w-[70px] lg:h-[30px] h-[50px]'} src={UfcImage.src} alt="Ufc logo"/></li>
+                    <li className={'lg:shrink shrink-0'}><img className={'lg:w-[50px] w-[70px] lg:h-[30px] h-[50px]'} src={WtaImage.src} alt="Wta logo"/></li>
+                    <li className={'lg:shrink shrink-0'}><img className={'lg:w-[50px] w-[70px] lg:h-[30px] h-[50px]'} src={FibaImage.src} alt="Fiba logo"/></li>
+                    <li className={'lg:shrink shrink-0'}><img className={'lg:w-[50px] w-[70px] lg:h-[30px] h-[50px]'} src={NhlImage.src} alt="Nhl logo"/></li>
+                    <li className={'lg:shrink shrink-0'}><img className={'lg:w-[50px] w-[70px] lg:h-[30px] h-[50px]'} src={AtpImage.src} alt="Atp logo"/></li>
+                    <li className={'lg:shrink shrink-0'}><img className={'lg:w-[50px] w-[70px] lg:h-[30px] h-[50px]'} src={ItfImage.src} alt="Itf logo"/></li>
+                    <li className={'lg:shrink shrink-0'}><img className={'lg:w-[50px] w-[70px] lg:h-[30px] h-[50px]'} src={FifaImage.src} alt="Fifa logo"/></li>
                 </ul>
-                <div className={'flex gap-[10px]'}>
+                <div className={'lg:flex hidden gap-[10px]'}>
                     <LangDropdownComponent position={'top'} />
                     <button className={'w-[30px] h-[30px] bg-white/10 flex justify-center items-center text-white rounded-[5px]'}><IconComponent name={'mobile'} size={15} /></button>
                     <button className={'w-[30px] h-[30px] bg-white/10 flex justify-center items-center text-white rounded-[5px]'} onClick={() => window.scroll({top: 0, left: 0, behavior: 'smooth'})}>
@@ -64,26 +86,26 @@ export default function MiddleSideComponent():ReactNode {
                 </div>
             </div>
             <div className={'gradiant-divider'} />
-            <div className={'flex gap-[20px] justify-between items-center py-[20px]'}>
-                <div><img className={'w-full h-[35px] grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all duration-500'} src={ApplepayImage.src} alt="Applepay image"/></div>
-                <div><img className={'w-full h-[35px] grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all duration-500'} src={AstropayImage.src} alt="Astropay image"/></div>
-                <div><img className={'w-full h-[35px] grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all duration-500'} src={BitcoinImage.src} alt="Bitcoin image"/></div>
-                <div><img className={'w-full h-[35px] grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all duration-500'} src={DiscoverImage.src} alt="Discover image"/></div>
-                <div><img className={'w-full h-[35px] grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all duration-500'} src={EtherImage.src} alt="Ether image"/></div>
-                <div><img className={'w-full h-[35px] grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all duration-500'} src={FkImage.src} alt="Fk image"/></div>
-                <div><img className={'w-full h-[35px] grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all duration-500'} src={GpayImage.src} alt="Gpay image"/></div>
-                <div><img className={'w-full h-[35px] grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all duration-500'} src={IntracImage.src} alt="Intrac image"/></div>
-                <div><img className={'w-full h-[35px] grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all duration-500'} src={JbcImage.src} alt="Jbc image"/></div>
-                <div><img className={'w-full h-[35px] grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all duration-500'} src={MuchbetterImage.src} alt="Muchbetter image"/></div>
-                <div><img className={'w-full h-[35px] grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all duration-500'} src={PayeerImage.src} alt="Payeer image"/></div>
-                <div><img className={'w-full h-[35px] grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all duration-500'} src={PaypalImage.src} alt="Paypal image"/></div>
-                <div><img className={'w-full h-[35px] grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all duration-500'} src={PiastrixImage.src} alt="Piastrix image"/></div>
-                <div><img className={'w-full h-[35px] grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all duration-500'} src={QiwiImage.src} alt="Qiwi image"/></div>
-                <div><img className={'w-full h-[35px] grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all duration-500'} src={SkrillImage.src} alt="Skrill image"/></div>
-                <div><img className={'w-full h-[35px] grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all duration-500'} src={TetherImage.src} alt="Tether image"/></div>
-                <div><img className={'w-full h-[35px] grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all duration-500'} src={VisaImage.src} alt="Visa image"/></div>
-                <div><img className={'w-full h-[35px] grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all duration-500'} src={WebmoneyImage.src} alt="Webmoney image"/></div>
-            </div>
+            <ul className={'flex gap-[20px] justify-between items-center py-[20px] lg:flex-nowrap flex-wrap'}>
+                <li><img className={'w-full lg:h-[35px] h-[20px] grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all duration-500'} src={ApplepayImage.src} alt="Applepay image"/></li>
+                <li><img className={'w-full lg:h-[35px] h-[20px] grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all duration-500'} src={AstropayImage.src} alt="Astropay image"/></li>
+                <li><img className={'w-full lg:h-[35px] h-[20px] grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all duration-500'} src={BitcoinImage.src} alt="Bitcoin image"/></li>
+                <li><img className={'w-full lg:h-[35px] h-[20px] grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all duration-500'} src={DiscoverImage.src} alt="Discover image"/></li>
+                <li><img className={'w-full lg:h-[35px] h-[20px] grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all duration-500'} src={EtherImage.src} alt="Ether image"/></li>
+                <li><img className={'w-full lg:h-[35px] h-[20px] grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all duration-500'} src={FkImage.src} alt="Fk image"/></li>
+                <li><img className={'w-full lg:h-[35px] h-[20px] grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all duration-500'} src={GpayImage.src} alt="Gpay image"/></li>
+                <li><img className={'w-full lg:h-[35px] h-[20px] grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all duration-500'} src={IntracImage.src} alt="Intrac image"/></li>
+                <li><img className={'w-full lg:h-[35px] h-[20px] grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all duration-500'} src={JbcImage.src} alt="Jbc image"/></li>
+                <li><img className={'w-full lg:h-[35px] h-[20px] grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all duration-500'} src={MuchbetterImage.src} alt="Muchbetter image"/></li>
+                <li><img className={'w-full lg:h-[35px] h-[20px] grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all duration-500'} src={PayeerImage.src} alt="Payeer image"/></li>
+                <li><img className={'w-full lg:h-[35px] h-[20px] grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all duration-500'} src={PaypalImage.src} alt="Paypal image"/></li>
+                <li><img className={'w-full lg:h-[35px] h-[20px] grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all duration-500'} src={PiastrixImage.src} alt="Piastrix image"/></li>
+                <li><img className={'w-full lg:h-[35px] h-[20px] grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all duration-500'} src={QiwiImage.src} alt="Qiwi image"/></li>
+                <li><img className={'w-full lg:h-[35px] h-[20px] grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all duration-500'} src={SkrillImage.src} alt="Skrill image"/></li>
+                <li><img className={'w-full lg:h-[35px] h-[20px] grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all duration-500'} src={TetherImage.src} alt="Tether image"/></li>
+                <li><img className={'w-full lg:h-[35px] h-[20px] grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all duration-500'} src={VisaImage.src} alt="Visa image"/></li>
+                <li><img className={'w-full lg:h-[35px] h-[20px] grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all duration-500'} src={WebmoneyImage.src} alt="Webmoney image"/></li>
+            </ul>
         </>
     );
 }

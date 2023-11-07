@@ -10,7 +10,7 @@ export default function FooterComponent():ReactNode {
     return (
         <footer className={'max-w-container mx-auto p-[20px]'}>
             <TopSideComponent />
-            <div className={'gradiant-divider'} />
+            <div className={'gradiant-divider lg:block hidden'} />
             <MiddleSideComponent />
             <div className={'gradiant-divider'} />
             <BottomSideComponent />
