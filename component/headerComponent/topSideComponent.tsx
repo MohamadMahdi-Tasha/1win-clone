@@ -17,7 +17,7 @@ import MobileNavComponent from "@/component/mobileNav";
 import {usePathname} from "next/navigation";
 
 // Creating and exporting top side of header component as default
-export default function TopsideComponent():ReactNode {
+export default function TopSideComponent():ReactNode {
     // Finding pathname of url
     const pathName:string = usePathname();
 

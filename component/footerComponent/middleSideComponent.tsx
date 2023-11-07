@@ -40,10 +40,10 @@ export default function MiddleSideComponent():ReactNode {
         <>
             <div className={'flex justify-between gap-[10px] flex-wrap py-[20px]'}>
                 <ul className={'flex gap-[10px]'}>
-                    <li><a className={'rounded-[10px] text-white bg-red-600 w-[30px] h-[30px] flex justify-center items-center'} href="#"><IconComponent name={'telegram'} size={15} /></a></li>
-                    <li><a className={'rounded-[10px] text-white bg-red-600 w-[30px] h-[30px] flex justify-center items-center'} href="#"><IconComponent name={'instagram'} size={15} /></a></li>
-                    <li><a className={'rounded-[10px] text-white bg-red-600 w-[30px] h-[30px] flex justify-center items-center'} href="#"><IconComponent name={'facebook'} size={15} /></a></li>
-                    <li><a className={'rounded-[10px] text-white bg-red-600 w-[30px] h-[30px] flex justify-center items-center'} href="#"><IconComponent name={'twitter-x'} size={15} /></a></li>
+                    <li><a className={'rounded-[10px] text-white w-[30px] h-[30px] flex justify-center items-center bg-gradient-to-r from-telegramLightBlue to-telegramBlue'} href="#"><IconComponent name={'telegram'} size={15} /></a></li>
+                    <li><a className={'rounded-[10px] text-white w-[30px] h-[30px] flex justify-center items-center bg-gradient-to-tr from-instagramYellow via-instagramPink to-instagramPurple'} href="#"><IconComponent name={'instagram'} size={15} /></a></li>
+                    <li><a className={'rounded-[10px] text-white w-[30px] h-[30px] flex justify-center items-center bg-gradient-to-tr from-facebookLightBlue to-facebookBlue'} href="#"><IconComponent name={'facebook'} size={15} /></a></li>
+                    <li><a className={'rounded-[10px] text-black bg-white w-[30px] h-[30px] flex justify-center items-center'} href="#"><IconComponent name={'twitter-x'} size={15} /></a></li>
                 </ul>
                 <ul className={'flex gap-[20px]'}>
                     <li><img className={'w-[50px] h-[30px]'} src={UefaImage.src} alt="Ueafa logo"/></li>

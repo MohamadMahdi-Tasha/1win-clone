@@ -22,7 +22,7 @@ interface propsType {
 }
 
 // Creating and exporting bottom side od header component as default
-export default function BottomsideComponent({isStickedToTop}:propsType):ReactNode {
+export default function BottomSideComponent({isStickedToTop}:propsType):ReactNode {
     // Finding pathname of url
     const pathName:string = usePathname();
 

@@ -3,8 +3,8 @@
 
 // Importing part
 import {ReactNode, useRef, useEffect, MutableRefObject, Dispatch, useState} from "react";
-import TopsideComponent from '@/component/headerComponent/topsideComponent';
-import BottomsideComponent from "@/component/headerComponent/bottomsideComponent";
+import TopSideComponent from '@/component/headerComponent/topSideComponent';
+import BottomSideComponent from "@/component/headerComponent/bottomSideComponent";
 
 // Creating and exporting header component as default
 export default function HeaderComponent():ReactNode {
@@ -32,12 +32,12 @@ export default function HeaderComponent():ReactNode {
         <>
             <header>
                 <div className={'max-w-container mx-auto p-[20px]'}>
-                    <TopsideComponent />
+                    <TopSideComponent />
                 </div>
             </header>
             <div className={'lg:sticky top-0 left-0 w-full z-[50]'} ref={stickyPartRef}>
                 <div className={'max-w-container mx-auto px-[20px] lg:border-y-0 border-y border-y-white/20 lg:py-0 py-[20px]'}>
-                    <BottomsideComponent isStickedToTop={isStickedToTop} />
+                    <BottomSideComponent isStickedToTop={isStickedToTop} />
                 </div>
             </div>
         </>

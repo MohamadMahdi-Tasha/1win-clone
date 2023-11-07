@@ -9,7 +9,7 @@ import CricketImage from '@/public/img/footer/bottom/img-cricket.png';
 import RatingImage from '@/public/img/footer/bottom/img-rating.svg';
 
 // Creating and exporting bottom side of footer as default
-export default function FooterComponent():ReactNode {
+export default function BottomSideComponent():ReactNode {
     // Returning JSX
     return (
         <div>

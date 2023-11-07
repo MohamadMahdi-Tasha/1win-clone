@@ -4,8 +4,8 @@ import {Metadata} from "next";
 import localFont from 'next/font/local'
 import {NextFontWithVariable} from "next/dist/compiled/@next/font";
 import HeaderComponent from "@/component/headerComponent";
+import FooterComponent from "@/component/footerComponent";
 import '@/app/index.css';
-import FooterComponent from "@/component/footer";
 
 // Defining font (SF Pro)
 const SFProFont:NextFontWithVariable = localFont({

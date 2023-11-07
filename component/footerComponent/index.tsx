@@ -1,7 +1,8 @@
 // Importing part
 import {ReactNode} from "react";
-import TopSideComponent from "@/component/footer/topSideComponent";
-import MiddleSideComponent from "@/component/footer/middleSideComponent";
+import TopSideComponent from "@/component/footerComponent/topSideComponent";
+import MiddleSideComponent from "@/component/footerComponent/middleSideComponent";
+import BottomSideComponent from "@/component/footerComponent/bottomSideComponent";
 
 // Creating and exporting footer component as default
 export default function FooterComponent():ReactNode {
@@ -12,6 +13,7 @@ export default function FooterComponent():ReactNode {
             <div className={'gradiant-divider'} />
             <MiddleSideComponent />
             <div className={'gradiant-divider'} />
+            <BottomSideComponent />
         </footer>
     );
 }

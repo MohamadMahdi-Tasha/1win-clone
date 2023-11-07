@@ -30,7 +30,14 @@ const config: Config = {
                 blue: '#0095ff',
                 andriodLighterGreen: '#A9E200',
                 green: '#31bc69',
-                darkerGreen: '#089e4e'
+                darkerGreen: '#089e4e',
+                telegramBlue: '#08c',
+                telegramLightBlue: '#0fb1d6',
+                instagramYellow: '#ffc90c',
+                instagramPink: '#ed146e',
+                instagramPurple: '#7e2bf4',
+                facebookBlue: '#4267b2',
+                facebookLightBlue: '#82a4e9',
             },
         }
     },
