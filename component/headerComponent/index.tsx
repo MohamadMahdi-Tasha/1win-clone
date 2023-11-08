@@ -31,7 +31,7 @@ export default function HeaderComponent():ReactNode {
     return (
         <>
             <header>
-                <div className={'max-w-container mx-auto p-[20px]'}>
+                <div className={'container'}>
                     <TopSideComponent />
                 </div>
             </header>

@@ -3,7 +3,7 @@ import {ReactNode} from "react";
 
 // Defining type of props
 interface propsType {
-    name: 'lock' | 'mobile' | 'arrow-right' | 'star-bag' | 'windows' | 'android' | 'apple' | 'chevron' | 'tick' | 'plus' | 'list' | 'search' | 'person' | 'x' | 'chat' | 'telegram' | 'info' | 'instagram' | 'facebook' | 'twitter-x' | 'top' | 'desktop';
+    name: 'lock' | 'mobile' | 'arrow-right' | 'star-bag' | 'windows' | 'android' | 'apple' | 'chevron' | 'tick' | 'plus' | 'list' | 'search' | 'person' | 'x' | 'chat' | 'telegram' | 'info' | 'instagram' | 'facebook' | 'twitter-x' | 'top' | 'desktop' | 'flame-circle' | 'happy-face-circle';
     size: number;
 }
 
@@ -148,6 +148,48 @@ export default function IconComponent({name, size}:propsType):ReactNode {
         return (
             <svg width={size} height={size} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <path d="M13.333 12c.734 0 1.327-.6 1.327-1.333l.007-7.334c0-.733-.6-1.333-1.334-1.333H2.667c-.734 0-1.334.6-1.334 1.333v7.334c0 .733.6 1.333 1.334 1.333H0c0 .733.6 1.333 1.333 1.333h13.334c.733 0 1.333-.6 1.333-1.333h-2.667zM2.667 3.333h10.666v7.334H2.667V3.333zM8 12.667A.669.669 0 017.333 12c0-.367.3-.667.667-.667.367 0 .667.3.667.667 0 .367-.3.667-.667.667z" fill="currentColor"></path>
+            </svg>
+        );
+    } else if (name === 'flame-circle') {
+        return (
+            <svg width={size} height={size} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21" aria-hidden="true">
+                <defs>
+                    <linearGradient id="hot_svg__b" x1="77.691%" x2="-43.982%" y1="0%" y2="181.227%">
+                        <stop offset="0%" stopColor="#FB2099"></stop>
+                        <stop offset="100%" stopColor="#303595"></stop>
+                    </linearGradient>
+                    <filter id="hot_svg__a" width="381%" height="381%" x="-140.5%" y="-140.5%"
+                            filterUnits="objectBoundingBox">
+                        <feOffset in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                        <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1"
+                                        stdDeviation="7.5"></feGaussianBlur>
+                        <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
+                                       values="0 0 0 0 0.816203773 0 0 0 0 0.00751322834 0 0 0 0 0.106696017 0 0 0 1 0"></feColorMatrix>
+                        <feMerge>
+                            <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                            <feMergeNode in="SourceGraphic"></feMergeNode>
+                        </feMerge>
+                    </filter>
+                </defs>
+                <g fill="none" fillRule="evenodd" filter="url(#hot_svg__a)">
+                    <path fill="none" d="M0 0h21v21H0z"></path>
+                    <path fill="#FFF" fillRule="nonzero" d="M10.183 16.625c-.094 0-5.013-1.094-4.932-5.336.078-4.032 5.69-7.789 5.69-7.789s-.12 1.788.207 2.598c.328.81.62 1.247 1.357 1.854.092-.295.298-.607.712-1.022.533 1.086 1.376 2.458 2.003 3.297 1.376 2.687.037 5.135-3.61 6.398-.964-.046 3.506-3.216-.67-5.455.723 2.24-3.223 3.23-.757 5.455z"></path>
+                    <path fill="url(#hot_svg__b)" d="M10.5 21C16.299 21 21 16.299 21 10.5S16.299 0 10.5 0 0 4.701 0 10.5 4.701 21 10.5 21zm0-1.75a8.75 8.75 0 110-17.5 8.75 8.75 0 010 17.5z"></path>
+                </g>
+            </svg>
+        );
+    } else if (name === 'happy-face-circle') {
+        return (
+            <svg width={size} height={size} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21" aria-hidden="true">
+                <defs>
+                    <linearGradient id="popular_svg__a" x1="85.499%" x2="50%" y1="0%" y2="100%">
+                        <stop offset="0%" stopColor="#00FF86"></stop>
+                        <stop offset="100%" stopColor="#00A858"></stop>
+                    </linearGradient>
+                </defs>
+                <path fill="none" d="M0 0h21v21H0z"></path>
+                <path fill="url(#popular_svg__a)" d="M10.5 21C16.299 21 21 16.299 21 10.5S16.299 0 10.5 0 0 4.701 0 10.5 4.701 21 10.5 21zm0-1.75a8.75 8.75 0 110-17.5 8.75 8.75 0 010 17.5z"></path>
+                <path fill="#FFF" d="M14.077 12.25a.725.725 0 01.712.87l-.047.205a4.377 4.377 0 01-8.527-.19l-.003-.04-.001-.04c0-.445.36-.805.804-.805zm-6.9-6.455a.4.4 0 01.182.182l.412.836.923.134a.4.4 0 01.222.683l-.668.65.158.92a.4.4 0 01-.58.422L7 9.188l-.826.434a.4.4 0 01-.58-.422l.158-.92-.668-.65a.4.4 0 01.222-.683l.923-.134.412-.836a.4.4 0 01.536-.182zm7 0a.4.4 0 01.182.182l.412.836.923.134a.4.4 0 01.222.683l-.668.65.158.92a.4.4 0 01-.58.422L14 9.188l-.826.434a.4.4 0 01-.58-.422l.158-.92-.668-.65a.4.4 0 01.222-.683l.923-.134.412-.836a.4.4 0 01.536-.182z"></path>
             </svg>
         );
     }

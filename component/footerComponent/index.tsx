@@ -8,7 +8,7 @@ import BottomSideComponent from "@/component/footerComponent/bottomSideComponent
 export default function FooterComponent():ReactNode {
     // Returning JSX
     return (
-        <footer className={'max-w-container mx-auto p-[20px]'}>
+        <footer className={'container'}>
             <TopSideComponent />
             <div className={'gradiant-divider lg:block hidden'} />
             <MiddleSideComponent />
