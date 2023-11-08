@@ -8,7 +8,7 @@ import CategoryGameComponent from "@/chunk/page/casino/categoryGameComponent";
 export default function LeftSideNavComponent():ReactNode {
     // Returning JSX
     return (
-        <nav className={'h-screen overflow-auto bg-lightTheme rounded-[20px] custom-scroll'}>
+        <nav className={'h-screen overflow-auto bg-lightTheme rounded-[20px] custom-scroll sticky left-0 top-[60px]'}>
             <header className={'sticky top-0 left-0 bg-lightTheme px-[20px] py-[15px]'}>
                 <form action="#" className={'flex relative'}>
                     <label htmlFor="search-input" className={'text-lightBlue absolute top-[50%] left-[10px] -translate-y-[50%]'}>
