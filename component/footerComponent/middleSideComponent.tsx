@@ -12,7 +12,7 @@ import NhlImage from '@/public/img/footer/sponsers/img-nhl.svg';
 import AtpImage from '@/public/img/footer/sponsers/img-atp.svg';
 import ItfImage from '@/public/img/footer/sponsers/img-itf.svg';
 import FifaImage from '@/public/img/footer/sponsers/img-fifa.svg';
-import LangDropdownComponent from "../../chunk/langDropdownComponent";
+import LangDropdownComponent from "@/chunk/langDropdown";
 
 import ApplepayImage from '@/public/img/footer/companys/img-applepay.svg';
 import AstropayImage from '@/public/img/footer/companys/img-astropay.svg';

@@ -4,7 +4,7 @@
 // Importing part
 import {Dispatch, ReactNode, useState} from "react";
 import IconComponent from "@/chunk/iconComponent";
-import LangDropdownItemComponent from "@/chunk/langDropdownComponent/langDropdownItemComponent";
+import LangDropdownItemComponent from "@/chunk/langDropdown/langDropdownItemComponent";
 import EnImage from '@/public/img/flags/img-en.svg';
 import AzImage from '@/public/img/flags/img-az.svg';
 import BdImage from '@/public/img/flags/img-bd.svg';
@@ -51,8 +51,8 @@ export default function LangDropdownComponent({position = 'top'}:propsType):Reac
                 <span className={'text-white rotate-180'}><IconComponent name={'chevron'} size={7} /></span>
                 <img className={'aspect-square w-[20px]'} src={EnImage.src} alt="Flag of england"/>
             </button>
-            <div data-position={position} data-opened={isOpened} className={'lg:absolute fixed lg:data-[position="top"]:-top-[30%] lg:data-[position="top"]:-translate-y-full lg:data-[position="bottom"]:top-[130%] data-[position="top"]:top-0 data-[position="bottom"]:top-0 shadow-lg right-0 bg-lightTheme z-[20] overflow-hidden lg:rounded-[20px] lg:w-[300px] w-full lg:h-[500px] h-full p-[20px] transition-all duration-500 data-[opened="false"]:opacity-0 data-[opened="true"]:opacity-100 data-[opened="false"]:invisible data-[opened="true"]:visible z-[90]'}>
-                <div className={'overflow-auto w-full h-full pr-[10px] lang-dropdown'}>
+            <div data-position={position} data-opened={isOpened} className={'lg:absolute fixed lg:data-[position="top"]:-top-[30%] lg:data-[position="top"]:-translate-y-full lg:data-[position="bottom"]:top-[130%] data-[position="top"]:top-0 data-[position="bottom"]:top-0 shadow-lg right-0 bg-lightTheme overflow-hidden lg:rounded-[20px] lg:w-[300px] w-full lg:h-[500px] h-full p-[20px] transition-all duration-500 data-[opened="false"]:opacity-0 data-[opened="true"]:opacity-100 data-[opened="false"]:invisible data-[opened="true"]:visible z-[90]'}>
+                <div className={'overflow-auto w-full h-full pr-[10px] custom-scroll'}>
                     <div className={'mb-[20px] lg:hidden flex justify-end items-center '}>
                         <button onClick={() => setOpened(false)} className={'text-white'}>
                             <IconComponent name={'x'} size={20} />

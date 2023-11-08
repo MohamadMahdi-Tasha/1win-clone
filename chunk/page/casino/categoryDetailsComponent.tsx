@@ -16,11 +16,11 @@ interface propsType {
 export default function CategoryDetailsComponent({count, name, theme, icon, link}:propsType):ReactNode {
     // Returning JSX
     return (
-        <Link href={link}>
+        <Link href={link} data-theme={theme} className={'w-[50%] bg-gradient-to-r data-[theme="green"]:from-green/50 data-[theme="pink"]:from-violet/50 to-theme p-[10px] rounded-[10px] flex items-center gap-[10px] flex-wrap transition-all duration-500 hover:opacity-50'}>
             <IconComponent name={(icon === 'flame') ? 'flame-circle' : 'happy-face-circle'} size={20} />
             <div>
-                <span>{name}</span>
-                <span>{count}</span>
+                <span className={'block text-white font-bold text-[10px] truncate'}>{name}</span>
+                <span className={'block text-white/50 text-[10px] truncate'}>{count}</span>
             </div>
         </Link>
     );

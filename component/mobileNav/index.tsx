@@ -5,8 +5,7 @@ import Link from "next/link";
 import IconLinkItemComponent from "@/chunk/mobileNav/iconLinkItemComponent";
 import BannerComponent from "@/chunk/mobileNav/bannerComponent";
 import ApplicationBannerImage from '@/public/img/mobileNav/img-banner-mobile.png';
-import EnImage from "@/public/img/flags/img-en.svg";
-import LangDropdownComponent from "../../chunk/langDropdownComponent";
+import LangDropdownComponent from "@/chunk/langDropdown";
 
 // Defining type of props
 interface propsType {

@@ -4,8 +4,8 @@
 @tailwind utilities;
 
 /*Custom styles*/
-.lang-dropdown::-webkit-scrollbar {@apply bg-transparent w-[10px];}
-.lang-dropdown::-webkit-scrollbar-thumb {@apply bg-white/20 active:bg-white/20 transition-all duration-500 rounded-[50rem];}
+.custom-scroll::-webkit-scrollbar {@apply bg-transparent w-[10px];}
+.custom-scroll::-webkit-scrollbar-thumb {@apply bg-white/20 active:bg-white/20 transition-all duration-500 rounded-[50rem];}
 .before-triangle::before {@apply content-[""] absolute top-0 left-[50%] -translate-y-full -translate-x-[50%] border-l-8 border-l-transparent border-r-transparent border-r-8 border-b-8 border-b-white w-0 h-0;}
 .no-scroll::-webkit-scrollbar {@apply hidden;}
 .gradiant-divider {@apply w-full h-[1px] bg-gradient-to-r from-white/50 to-transparent;}

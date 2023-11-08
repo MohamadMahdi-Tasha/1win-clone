@@ -10,7 +10,7 @@ import CasinoImage from '@/public/img/footer/bottom/img-casino-analyzer.png';
 import CasinoMentorImage from '@/public/img/footer/bottom/img-casino-mentor.png';
 import CricketImage from '@/public/img/footer/bottom/img-cricket.png';
 import RatingImage from '@/public/img/footer/bottom/img-rating.svg';
-import LangDropdownComponent from "@/chunk/langDropdownComponent";
+import LangDropdownComponent from "@/chunk/langDropdown";
 import IconComponent from "@/chunk/iconComponent";
 
 // Creating and exporting bottom side of footer as default

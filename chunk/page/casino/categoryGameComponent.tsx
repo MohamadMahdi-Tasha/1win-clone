@@ -16,12 +16,14 @@ export default function CategoryGameComponent({count, link, title, icon}:propsTy
     // Returning JSX
     return (
         <li>
-            <Link href={link}>
-                <div>
-                    <ColorfullIconComponent name={(icon === 'square') ? 'square-with-4-items' : icon} size={15} />
-                    <span>{title}</span>
+            <Link href={link} className={'py-[10px] px-[20px] gap-[10px] flex items-center justify-between transition-all duration-500 hover:bg-white/10'}>
+                <div className={'flex gap-[10px] w-[75%]'}>
+                    <ColorfullIconComponent name={(icon === 'square') ? 'square-with-4-items' : icon} size={25} />
+                    <span className={'text-white text-[13px] truncate block w-full'}>{title}</span>
                 </div>
-                <span>{count}</span>
+                <div className={'w-[25%] flex justify-end items-center'}>
+                    <span className={'text-[10px] text-white/50'}>{count}</span>
+                </div>
             </Link>
         </li>
     );
