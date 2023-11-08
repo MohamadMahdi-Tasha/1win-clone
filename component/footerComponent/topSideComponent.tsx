@@ -5,6 +5,7 @@ import Image from 'next/image';
 import DownloadComponent from "@/chunk/footer/topSide/downloadComponent";
 import DownloadHoverDropdownComponent from "@/chunk/downloadHoverDropdownComponent";
 import IconComponent from "@/chunk/iconComponent";
+import Link from "next/link";
 
 // Creating and exporting top side of footer component as default
 export default function TopSideComponent():ReactNode {
@@ -54,14 +55,14 @@ export default function TopSideComponent():ReactNode {
                     <h6 className={'footer-subtitle lg:mb-[40px] mb-[10px]'}>CATEGORIES</h6>
                     <div className={'lg:flex grid grid-cols-2 flex-col gap-[8px]'}>
                         <ul className={'flex gap-[8px] flex-col'}>
-                            <li className={'block'}><a className={'footer-subtitle-white block truncate'} href="#">Live</a></li>
-                            <li className={'block'}><a className={'footer-subtitle-white block truncate'} href="#">Sports</a></li>
-                            <li className={'block'}><a className={'footer-subtitle-white block truncate'} href="#">Promotions</a></li>
-                            <li className={'block'}><a className={'footer-subtitle-white block truncate'} href="#">Live-games</a></li>
+                            <li className={'block'}><Link className={'footer-subtitle-white block truncate'} href={'/live'}>Live</Link></li>
+                            <li className={'block'}><Link className={'footer-subtitle-white block truncate'} href={'/sports'}>Sports</Link></li>
+                            <li className={'block'}><Link className={'footer-subtitle-white block truncate'} href={'/promotion'}>Promotions</Link></li>
+                            <li className={'block'}><Link className={'footer-subtitle-white block truncate'} href={'/live'}>Live-games</Link></li>
                         </ul>
                         <ul className={'flex gap-[8px] flex-col'}>
-                            <li className={'block'}><a className={'footer-subtitle-white block truncate'} href="#">Poker</a></li>
-                            <li className={'block'}><a className={'footer-subtitle-white block truncate'} href="#">Casino</a></li>
+                            <li className={'block'}><Link className={'footer-subtitle-white block truncate'} href={'/game/poker'}>Poker</Link></li>
+                            <li className={'block'}><Link className={'footer-subtitle-white block truncate'} href={'/casino'}>Casino</Link></li>
                         </ul>
                     </div>
                 </div>
