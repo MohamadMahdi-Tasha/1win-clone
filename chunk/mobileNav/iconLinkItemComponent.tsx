@@ -10,15 +10,16 @@ import SpeedGameImage from '@/public/img/header/bottomside/games/img-speed.svg';
 // Defining type of props
 interface propsType {
     icon: 'live'|'sports'|'casino'|'live-games'|'fantasy-sport'|'cyberspot'|'avaitor-game'|'jetx-game'|'quick-games'|'bet'|'tvbet'|'1win'|'poker'|'vsport'|'bonuses'|'jet-game'|'speed-game';
+    link: string;
     name?: string;
 }
 
 // Creating and exporting icon link item component as default
-export default function IconLinkItemComponent({icon, name}:propsType):ReactNode {
+export default function IconLinkItemComponent({icon, name, link}:propsType):ReactNode {
     // Returning JSX
     return (
         <li>
-            <Link className={'flex items-center justify-start gap-[10px]'} href={'#'}>
+            <Link className={'flex items-center justify-start gap-[10px]'} href={link}>
                 {
                     (icon === 'jet-game')
                         ? <img className={'w-[50px] shrink-0 h-[50px] object-cover'} src={JetGameIconImage.src} alt={'Lucky jet game icon'}/>

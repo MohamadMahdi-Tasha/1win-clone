@@ -12,15 +12,15 @@ export default function LinkDropdownComponent():ReactNode {
                 <span className={'text-white/50 ml-[5px]'}>...</span>
             </button>
             <ul className={'absolute top-[150%] left-[50%] py-[10px] -translate-x-[50%] bg-white rounded-[10px] w-[200px] shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-500 before-triangle invisible'}>
-                <LinkItemComponent name={'Cybersport'} link={'#'} />
-                <LinkItemComponent name={'Fantasy sport'} link={'#'} />
-                <LinkItemComponent isNew name={'Bat Games'} link={'#'} />
-                <LinkItemComponent isNew name={'Twain sport'} link={'#'} />
-                <LinkItemComponent isNew name={'TVBET'} link={'#'} />
-                <LinkItemComponent name={'1win games'} link={'#'} />
-                <LinkItemComponent name={'Statistics'} link={'#'} />
-                <LinkItemComponent name={'Results'} link={'#'} />
-                <LinkItemComponent name={'Cases'} link={'#'} />
+                <LinkItemComponent name={'Cybersport'} link={'/game/cybersport'} />
+                <LinkItemComponent name={'Fantasy sport'} link={'/game/fantasy-sport'} />
+                <LinkItemComponent isNew name={'Bat Games'} link={'/game/bat'} />
+                <LinkItemComponent isNew name={'Twain sport'} link={'/game/twain'} />
+                <LinkItemComponent isNew name={'TVBET'} link={'/game/tvbet'} />
+                <LinkItemComponent name={'1win games'} link={'/game/1win'} />
+                <LinkItemComponent name={'Statistics'} link={'/statistics'} />
+                <LinkItemComponent name={'Results'} link={'/results'} />
+                <LinkItemComponent name={'Cases'} link={'/cases'} />
             </ul>
         </li>
     );

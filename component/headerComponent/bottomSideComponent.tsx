@@ -36,13 +36,21 @@ export default function BottomSideComponent({isStickedToTop}:propsType):ReactNod
         if (pathName === '/') {
             activeIndicator.style.left = '0';
         } else if (pathName === '/live') {
-            activeIndicator.style.left = 'calc(50px+20px)';
+            activeIndicator.style.left = '70px';
         } else if (pathName === '/sports') {
-            activeIndicator.style.left = 'calc(100px+20px)';
+            activeIndicator.style.left = '140px';
         } else if (pathName === '/casino') {
-            activeIndicator.style.left = 'calc(150px+20px)';
+            activeIndicator.style.left = '210px';
         } else if (pathName === '/live-games') {
-            activeIndicator.style.left = 'calc(200px+20px)';
+            activeIndicator.style.left = '280px';
+        } else if (pathName === '/game/lucky') {
+            activeIndicator.style.left = '350px';
+        } else if (pathName === '/game/speed') {
+            activeIndicator.style.left = '420px';
+        } else if (pathName === '/game/avaitor') {
+            activeIndicator.style.left = '490px';
+        } else if (pathName === '/game/jetx') {
+            activeIndicator.style.left = '560px';
         }
     }, [pathName])
 
@@ -60,27 +68,27 @@ export default function BottomSideComponent({isStickedToTop}:propsType):ReactNod
                         <div className={'absolute lg:hidden block top-0 h-full left-0 w-[100px] pointer-events-none bg-gradient-to-l from-transparent to-theme'} />
                         <div className={'absolute lg:hidden block top-0 h-full right-0 w-[100px] pointer-events-none bg-gradient-to-r from-transparent to-theme'} />
                         <ul className={'flex items-center gap-[20px] lg:overflow-visible overflow-auto w-full no-scroll lg:px-0 px-[50px]'}>
-                            <NavLinkComponent isActive={(pathName === '/')} name={'Home'} />
-                            <NavLinkComponent isActive={(pathName === '/live')} name={'Live'} />
-                            <NavLinkComponent isActive={(pathName === '/sports')} name={'Sports'} />
-                            <NavLinkComponent isActive={(pathName === '/casino')} name={'Casino'} />
-                            <NavLinkComponent isActive={(pathName === '/live-games')} name={'Live-games'} />
-                            <NavLinkComponent isActive={false} isImg name={"Lucky game"} imgSrc={LuckyGameImage.src} />
-                            <NavLinkComponent isActive={false} isImg name={"Speed game"} imgSrc={SpeedGameImage.src} />
-                            <NavLinkComponent isActive={false} isImg name={"Avaitor game"} imgSrc={AvaitorGameImage.src} />
-                            <NavLinkComponent isActive={false} isImg name={"JetX game"} imgSrc={JetXGameImage.src} />
+                            <NavLinkComponent link={'/'} isActive={(pathName === '/')} name={'Home'} />
+                            <NavLinkComponent link={'/live'} isActive={(pathName === '/live')} name={'Live'} />
+                            <NavLinkComponent link={'/sports'} isActive={(pathName === '/sports')} name={'Sports'} />
+                            <NavLinkComponent link={'/casino'} isActive={(pathName === '/casino')} name={'Casino'} />
+                            <NavLinkComponent link={'/live-games'} isActive={(pathName === '/live-games')} name={'Live-games'} />
+                            <NavLinkComponent link={'/game/lucky'} isActive={false} isImg name={"Lucky game"} imgSrc={LuckyGameImage.src} />
+                            <NavLinkComponent link={'/game/speed'} isActive={false} isImg name={"Speed game"} imgSrc={SpeedGameImage.src} />
+                            <NavLinkComponent link={'/game/avaitor'} isActive={false} isImg name={"Avaitor game"} imgSrc={AvaitorGameImage.src} />
+                            <NavLinkComponent link={'/game/jetx'} isActive={false} isImg name={"JetX game"} imgSrc={JetXGameImage.src} />
                             <LinkDropdownComponent />
                             <li>
                                 <ul className={'lg:hidden flex gap-[20px]'}>
-                                    <NavLinkComponent isActive={false} name={'Cybersport'} />
-                                    <NavLinkComponent isActive={false} name={'Fantasy sport'} />
-                                    <NavLinkComponent isActive={false} name={'Bat Games'} />
-                                    <NavLinkComponent isActive={false} name={'Twain sport'} />
-                                    <NavLinkComponent isActive={false} name={'TVBET'} />
-                                    <NavLinkComponent isActive={false} name={'1win games'} />
-                                    <NavLinkComponent isActive={false} name={'Statistics'} />
-                                    <NavLinkComponent isActive={false} name={'Results'} />
-                                    <NavLinkComponent isActive={false} name={'Cases'} />
+                                    <NavLinkComponent link={'/game/cybersport'} isActive={false} name={'Cybersport'} />
+                                    <NavLinkComponent link={'/game/fantasy-sport'} isActive={false} name={'Fantasy sport'} />
+                                    <NavLinkComponent link={'/game/bat'} isActive={false} name={'Bat Games'} />
+                                    <NavLinkComponent link={'/game/twain'} isActive={false} name={'Twain sport'} />
+                                    <NavLinkComponent link={'/game/tvbet'} isActive={false} name={'TVBET'} />
+                                    <NavLinkComponent link={'/game/1win'} isActive={false} name={'1win games'} />
+                                    <NavLinkComponent link={'/statistics'} isActive={false} name={'Statistics'} />
+                                    <NavLinkComponent link={'/results'} isActive={false} name={'Results'} />
+                                    <NavLinkComponent link={'/cases'} isActive={false} name={'Cases'} />
                                 </ul>
                             </li>
                         </ul>

@@ -34,31 +34,31 @@ export default function MobileNavComponent({closeFN, isOpened}:propsType):ReactN
                 </div>
                 <div className={'p-[20px] flex flex-col gap-[20px]'}>
                     <ul className={'flex flex-col gap-[20px]'}>
-                        <IconLinkItemComponent icon={'live'} name={'Live'} />
-                        <IconLinkItemComponent icon={'sports'} name={'Sports'} />
-                        <IconLinkItemComponent icon={'casino'} name={'Casino'} />
-                        <IconLinkItemComponent icon={'live-games'} name={'Live-games'} />
-                        <IconLinkItemComponent icon={'fantasy-sport'} name={'Fantasy Sport'} />
-                        <IconLinkItemComponent icon={'cyberspot'} name={'Cybersport'} />
+                        <IconLinkItemComponent link={'/live'} icon={'live'} name={'Live'} />
+                        <IconLinkItemComponent link={'/sports'} icon={'sports'} name={'Sports'} />
+                        <IconLinkItemComponent link={'/casino'} icon={'casino'} name={'Casino'} />
+                        <IconLinkItemComponent link={'/live-games'} icon={'live-games'} name={'Live-games'} />
+                        <IconLinkItemComponent link={'/game/cybersport'} icon={'cyberspot'} name={'Cybersport'} />
+                        <IconLinkItemComponent link={'/game/fantasy-sport'} icon={'fantasy-sport'} name={'Fantasy Sport'} />
                     </ul>
                     <div className={'gradiant-divider'} />
                     <ul className={'flex flex-col gap-[20px]'}>
-                        <IconLinkItemComponent icon={'jet-game'} />
-                        <IconLinkItemComponent icon={'speed-game'} />
-                        <IconLinkItemComponent icon={'avaitor-game'} name={'Avaitor'} />
-                        <IconLinkItemComponent icon={'jetx-game'} name={'JET X'} />
+                        <IconLinkItemComponent link={'/game/lucky'} icon={'jet-game'} />
+                        <IconLinkItemComponent link={'/game/speed'} icon={'speed-game'} />
+                        <IconLinkItemComponent link={'/game/avaitor'} icon={'avaitor-game'} name={'Avaitor'} />
+                        <IconLinkItemComponent link={'/game/jetx'} icon={'jetx-game'} name={'JET X'} />
                     </ul>
                     <div className={'gradiant-divider'} />
                     <ul className={'flex flex-col gap-[20px]'}>
-                        <IconLinkItemComponent icon={'quick-games'} name={'Quick games'} />
-                        <IconLinkItemComponent icon={'bet'} name={'Betgames'} />
-                        <IconLinkItemComponent icon={'tvbet'} name={'TVBET'} />
-                        <IconLinkItemComponent icon={'1win'} name={'1win games'} />
+                        <IconLinkItemComponent link={'/quickgames'} icon={'quick-games'} name={'Quick games'} />
+                        <IconLinkItemComponent link={'/bet'} icon={'bet'} name={'Betgames'} />
+                        <IconLinkItemComponent link={'/game/tvbet'} icon={'tvbet'} name={'TVBET'} />
+                        <IconLinkItemComponent link={'/game/1win'} icon={'1win'} name={'1win games'} />
                     </ul>
                     <ul className={'flex flex-col gap-[20px]'}>
-                        <IconLinkItemComponent icon={'poker'} name={'Poker'} />
-                        <IconLinkItemComponent icon={'vsport'} name={'Vsport'} />
-                        <IconLinkItemComponent icon={'bonuses'} name={'Bonosues'} />
+                        <IconLinkItemComponent link={'/game/poker'} icon={'poker'} name={'Poker'} />
+                        <IconLinkItemComponent link={'/game/vsport'} icon={'vsport'} name={'Vsport'} />
+                        <IconLinkItemComponent link={'/bonuses'} icon={'bonuses'} name={'Bonosues'} />
                     </ul>
                     <div className={'flex gap-[20px] flex-col'}>
                         <BannerComponent theme={'pink'} title={'Application'} img={ApplicationBannerImage.src}>Install the app and get $100 bonuses</BannerComponent>
