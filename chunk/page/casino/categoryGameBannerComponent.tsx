@@ -14,7 +14,7 @@ interface propsType {
 export default function CategoryGameBannerComponent({img, link, name}:propsType):ReactNode {
     // Returning JSX
     return (
-        <Link className={'block relative group rounded-[10px] h-[150px] overflow-hidden'} href={link}>
+        <Link className={'block relative group rounded-[10px] lg:h-[150px] h-[100px] overflow-hidden'} href={link}>
             <img className={'absolute top-0 left-0 w-full h-full object-cover transition-all duration-500 group-hover:scale-110'} src={img} alt={name} />
             <span>{name}</span>
         </Link>

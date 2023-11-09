@@ -27,16 +27,16 @@ export default function ProviderSlideComponent({gamesCount, images, name, link, 
                     <span className={'text-white/50 truncate text-[10px] block'}>{gamesCount} games </span>
                 </div>
             </div>
-            <div className={'grid grid-cols-3 gap-[10px]'}>
+            <div className={'grid lg:grid-cols-3 grid-cols-2 gap-[10px]'}>
                 {
                     (images.length === 1)
                         ? (
-                            [...new Array(6)].map(() => (
-                                <img className={'rounded-[10px]'} src={images[0]} alt="Image of recent games" />
+                            [...new Array(6)].map((item, index) => (
+                                <img key={index} className={'rounded-[10px]'} src={images[0]} alt="Image of recent games" />
                             ))
                         ) : (
-                            images.map((image) => (
-                                <img className={'rounded-[10px]'} src={image} alt="Image of recent games" />
+                            images.map((image, index) => (
+                                <img key={index} className={'rounded-[10px]'} src={image} alt="Image of recent games" />
                             ))
                         )
                 }

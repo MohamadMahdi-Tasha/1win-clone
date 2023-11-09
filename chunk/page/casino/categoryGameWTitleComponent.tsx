@@ -3,6 +3,7 @@ import {ReactNode} from "react";
 import Link from "next/link";
 import IconComponent from "@/chunk/iconComponent";
 import {Swiper} from "swiper/react";
+import {Navigation} from "swiper/modules";
 import 'swiper/css';
 
 // Defining type of props
@@ -21,20 +22,30 @@ export default function CategoryGameWTitleComponent({title, children, count, all
         <div>
             <div className={'flex items-center justify-between gap-[20px] flex-wrap mb-[20px]'}>
                 <div className={'flex gap-[10px] items-end'}>
-                    <span className={'font-bold text-white text-[30px] block'}>{title}</span>
-                    <span className={'text-white/50 text-[15px] block'}>{count}</span>
+                    <span className={'font-bold text-white lg:text-[30px] text-[15px] block'}>{title}</span>
+                    <span className={'text-white/50 lg:text-[15px] text-[10px] lg:block hidden'}>{count.toLocaleString()}</span>
                 </div>
-                <div className={'flex items-center gap-[10px]'}>
-                    <Link className={'text-[10px] text-lightBlue'} href={allLink}>All</Link>
-                    <button className={'w-[30px] h-[30px] aspect-square flex justify-center items-center bg-lightTheme rounded-[5px] transition-all duration-500 hover:opacity-50'}>
+                <div className={'flex lg:flex-row flex-col lg:items-center items-end lg:gap-[10px]'}>
+                    <Link className={'text-[10px] text-lightBlue lg:text-start'} href={allLink}>All</Link>
+                    <span className={'text-white/50 lg:text-[15px] lg:text-start text-[10px] lg:hidden block'}>{count.toLocaleString()}</span>
+                    <button data-id={btoa(title)} className={'slider-prev-btn w-[30px] h-[30px] aspect-square lg:flex hidden justify-center items-center bg-lightTheme rounded-[5px] transition-all duration-500 hover:opacity-50'}>
                         <span className={'text-white -rotate-90'}><IconComponent name={'chevron'} size={12} /></span>
                     </button>
-                    <button className={'w-[30px] h-[30px] aspect-square flex justify-center items-center bg-lightTheme rounded-[5px] transition-all duration-500 hover:opacity-50'}>
+                    <button data-id={btoa(title)} className={'slider-next-btn w-[30px] h-[30px] aspect-square lg:flex hidden justify-center items-center bg-lightTheme rounded-[5px] transition-all duration-500 hover:opacity-50'}>
                         <span className={'text-white rotate-90'}><IconComponent name={'chevron'} size={12} /></span>
                     </button>
                 </div>
             </div>
-            <Swiper slidesPerGroup={(threeSlides) ? 3 : 4} slidesPerView={(threeSlides) ? 3 : 4}>
+            <Swiper
+                spaceBetween={10}
+                modules={[Navigation]}
+                slidesPerGroup={(threeSlides) ? 3 : 4}
+                slidesPerView={(threeSlides) ? 3 : 4}
+                navigation={{
+                    nextEl: `.slider-next-btn[data-id="${btoa(title)}"]`,
+                    prevEl: `.slider-prev-btn[data-id="${btoa(title)}"]`
+                }}
+            >
                 {children}
             </Swiper>
         </div>

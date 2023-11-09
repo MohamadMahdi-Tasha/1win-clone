@@ -7,7 +7,7 @@ import MainSideComponent from "@/component/page/casino/mainSideComponent";
 export default function CasinoPage():ReactNode {
     // Returning JSX
     return (
-        <section className={'container grid grid-cols-4 gap-[20px]'}>
+        <section className={'container lg:grid grid-cols-4 gap-[20px]'}>
             <LeftSideNavComponent />
             <MainSideComponent />
         </section>
