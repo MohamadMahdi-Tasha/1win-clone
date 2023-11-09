@@ -41,6 +41,15 @@ export default function CategoryGameWTitleComponent({title, children, count, all
                 modules={[Navigation]}
                 slidesPerGroup={(threeSlides) ? 3 : 4}
                 slidesPerView={(threeSlides) ? 3 : 4}
+                breakpoints={{
+                    1024: {
+                        slidesPerView: (threeSlides) ? 3 : 4,
+                        slidesPerGroup: (threeSlides) ? 3 : 4,
+                    }, 1: {
+                        slidesPerView: (threeSlides) ? 2 : 3,
+                        slidesPerGroup: (threeSlides) ? 2 : 3,
+                    }
+                }}
                 navigation={{
                     nextEl: `.slider-next-btn[data-id="${btoa(title)}"]`,
                     prevEl: `.slider-prev-btn[data-id="${btoa(title)}"]`
