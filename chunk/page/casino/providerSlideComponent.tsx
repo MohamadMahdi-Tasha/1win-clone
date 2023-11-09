@@ -15,20 +15,31 @@ interface propsType {
 export default function ProviderSlideComponent({gamesCount, images, name, link, profileImg}:propsType):ReactNode {
     // Returning JSX
     return (
-        <Link href={link}>
-            <div>
+        <Link href={link} className={'block p-[10px] rounded-[10px] bg-lightTheme'}>
+            <div className={'flex items-center gap-[10px] w-full mb-[20px]'}>
                 {
                     (profileImg === 'no-img')
-                        ? <div />
-                        : <img src={profileImg} alt={name} />
+                        ? <div className={'w-[30px] h-[30px] shrink-0 bg-green rounded-full'} />
+                        : <img src={profileImg} alt={name} className={'w-[30px] h-[30px] shrink-0'} />
                 }
-                <div>
-                    <span>{name}</span>
-                    <span>{gamesCount} games</span>
+                <div className={'w-full overflow-hidden'}>
+                    <span className={'text-white truncate w-full text-[12px] block'}>{name}</span>
+                    <span className={'text-white/50 truncate text-[10px] block'}>{gamesCount} games </span>
                 </div>
             </div>
-            <div>
-                {images.map((item:string) => <img src={item} alt={`Game's of ${name}`} />)}
+            <div className={'grid grid-cols-3 gap-[10px]'}>
+                {
+                    (images.length === 1)
+                        ? (
+                            [...new Array(6)].map(() => (
+                                <img className={'rounded-[10px]'} src={images[0]} alt="Image of recent games" />
+                            ))
+                        ) : (
+                            images.map((image) => (
+                                <img className={'rounded-[10px]'} src={image} alt="Image of recent games" />
+                            ))
+                        )
+                }
             </div>
         </Link>
     );
