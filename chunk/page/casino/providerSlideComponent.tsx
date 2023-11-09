@@ -8,7 +8,7 @@ interface propsType {
     gamesCount: number;
     link: string;
     profileImg: 'no-img' | string;
-    images: [string, string, string, string, string, string];
+    images: [string, string, string, string, string, string] | [string];
 }
 
 // Creating and exporting providers slide component as default
