@@ -9,7 +9,7 @@ import CategoryDropdownComponent from '@/chunk/page/casino/categoryDropdownCompo
 export default function LeftSideNavComponent():ReactNode {
     // Returning JSX
     return (
-        <nav className={'lg:h-screen lg:overflow-auto lg:bg-lightTheme lg:rounded-[20px] lg:custom-scroll lg:sticky left-0 top-[60px] w-full lg:mb-0 mb-[20px]'}>
+        <nav className={'lg:h-screen lg:overflow-auto lg:bg-lightTheme lg:rounded-[20px] custom-scroll lg:sticky left-0 top-[60px] w-full lg:mb-0 mb-[20px]'}>
             <header className={'lg:sticky top-0 left-0 lg:bg-lightTheme lg:px-[20px] lg:py-[15px]'}>
                 <form action="#" className={'lg:flex relative lg:mb-0 mb-[10px]'}>
                     <label htmlFor="search-input" className={'text-lightBlue absolute top-[50%] left-[10px] -translate-y-[50%]'}>
