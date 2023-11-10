@@ -104,7 +104,7 @@ export default function MainSideComponent():ReactNode {
     return (
         <main className={'lg:col-span-3'}>
             <span className={'font-bold text-white lg:text-[30px] text-[15px] block mb-[20px]'}>New</span>
-            <ul className={'grid grid-cols-5 gap-[20px]'}>
+            <ul className={'grid lg:grid-cols-5 grid-cols-2 gap-[20px]'}>
                 {
                     fakeGameData.map((fakeGame, index) => (
                         <CategoryGameBannerComponent key={index} img={fakeGame.img} link={fakeGame.link} name={fakeGame.name} />
