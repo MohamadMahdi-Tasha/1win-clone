@@ -37,19 +37,19 @@ export default function BottomSideComponent({isStickedToTop}:propsType):ReactNod
             activeIndicator.style.left = '0';
         } else if (pathName === '/live') {
             activeIndicator.style.left = '70px';
-        } else if (pathName === '/sports') {
+        } else if (pathName.includes('/sports')) {
             activeIndicator.style.left = '140px';
-        } else if (pathName === '/casino') {
+        } else if (pathName.includes('/casino')) {
             activeIndicator.style.left = '210px';
-        } else if (pathName === '/live-games') {
+        } else if (pathName.includes('/live-games')) {
             activeIndicator.style.left = '280px';
-        } else if (pathName === '/game/lucky') {
+        } else if (pathName.includes('/game/lucky')) {
             activeIndicator.style.left = '350px';
-        } else if (pathName === '/game/speed') {
+        } else if (pathName.includes('/game/speed')) {
             activeIndicator.style.left = '420px';
-        } else if (pathName === '/game/avaitor') {
+        } else if (pathName.includes('/game/avaitor')) {
             activeIndicator.style.left = '490px';
-        } else if (pathName === '/game/jetx') {
+        } else if (pathName.includes('/game/jetx')) {
             activeIndicator.style.left = '560px';
         }
     }, [pathName])
@@ -69,14 +69,14 @@ export default function BottomSideComponent({isStickedToTop}:propsType):ReactNod
                         <div className={'absolute lg:hidden block top-0 h-full right-0 w-[100px] pointer-events-none bg-gradient-to-r from-transparent to-theme'} />
                         <ul className={'flex items-center gap-[20px] lg:overflow-visible overflow-auto w-full no-scroll lg:px-0 px-[50px]'}>
                             <NavLinkComponent link={'/'} isActive={(pathName === '/')} name={'Home'} />
-                            <NavLinkComponent link={'/live'} isActive={(pathName === '/live')} name={'Live'} />
-                            <NavLinkComponent link={'/sports'} isActive={(pathName === '/sports')} name={'Sports'} />
-                            <NavLinkComponent link={'/casino'} isActive={(pathName === '/casino')} name={'Casino'} />
-                            <NavLinkComponent link={'/live-games'} isActive={(pathName === '/live-games')} name={'Live-games'} />
-                            <NavLinkComponent link={'/game/lucky'} isActive={false} isImg name={"Lucky game"} imgSrc={LuckyGameImage.src} />
-                            <NavLinkComponent link={'/game/speed'} isActive={false} isImg name={"Speed game"} imgSrc={SpeedGameImage.src} />
-                            <NavLinkComponent link={'/game/avaitor'} isActive={false} isImg name={"Avaitor game"} imgSrc={AvaitorGameImage.src} />
-                            <NavLinkComponent link={'/game/jetx'} isActive={false} isImg name={"JetX game"} imgSrc={JetXGameImage.src} />
+                            <NavLinkComponent link={'/live'} isActive={(pathName.includes('/live'))} name={'Live'} />
+                            <NavLinkComponent link={'/sports'} isActive={(pathName.includes('/sports'))} name={'Sports'} />
+                            <NavLinkComponent link={'/casino'} isActive={(pathName.includes('/casino'))} name={'Casino'} />
+                            <NavLinkComponent link={'/live-games'} isActive={(pathName.includes('/live-games'))} name={'Live-games'} />
+                            <NavLinkComponent link={'/game/lucky'} isActive={(pathName === '/game/lucky')} isImg name={"Lucky game"} imgSrc={LuckyGameImage.src} />
+                            <NavLinkComponent link={'/game/speed'} isActive={(pathName === '/game/speed')} isImg name={"Speed game"} imgSrc={SpeedGameImage.src} />
+                            <NavLinkComponent link={'/game/avaitor'} isActive={(pathName === '/game/avaitor')} isImg name={"Avaitor game"} imgSrc={AvaitorGameImage.src} />
+                            <NavLinkComponent link={'/game/jetx'} isActive={(pathName === '/game/jetx')} isImg name={"JetX game"} imgSrc={JetXGameImage.src} />
                             <LinkDropdownComponent />
                             <li>
                                 <ul className={'lg:hidden flex gap-[20px]'}>

@@ -19,24 +19,24 @@ export default function LeftSideNavComponent():ReactNode {
                 </form>
                 <div className={'lg:hidden relative flex gap-[10px]'}>
                     <CategoryDropdownComponent title={'Provider'}>
-                        <CategoryGameComponent icon={'square'} title={'1win games'} count={13} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'new'} count={69} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'Quick games'} count={196} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'Jackpots'} count={440} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'Slots'} count={6914} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'Only on 1win'} count={16} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'Top Games'} count={191} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'Grand Holiday 500$'} count={333} link={'#'} />
+                        <CategoryGameComponent link={'/casino/list/1'} icon={'square'} title={'1win games'} count={13} />
+                        <CategoryGameComponent link={'/casino/list/2'} icon={'square'} title={'new'} count={69} />
+                        <CategoryGameComponent link={'/casino/list/3'} icon={'square'} title={'Quick games'} count={196} />
+                        <CategoryGameComponent link={'/casino/list/4'} icon={'square'} title={'Jackpots'} count={440} />
+                        <CategoryGameComponent link={'/casino/list/5'} icon={'square'} title={'Slots'} count={6914} />
+                        <CategoryGameComponent link={'/casino/list/6'} icon={'square'} title={'Only on 1win'} count={16} />
+                        <CategoryGameComponent link={'/casino/list/7'} icon={'square'} title={'Top Games'} count={191} />
+                        <CategoryGameComponent link={'/casino/list/8'} icon={'square'} title={'Grand Holiday 500$'} count={333} />
                     </CategoryDropdownComponent>
                     <CategoryDropdownComponent title={'Category'}>
-                        <CategoryGameComponent icon={'square'} title={'1win games'} count={13} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'new'} count={69} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'Quick games'} count={196} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'Jackpots'} count={440} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'Slots'} count={6914} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'Only on 1win'} count={16} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'Top Games'} count={191} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'Grand Holiday 500$'} count={333} link={'#'} />
+                        <CategoryGameComponent link={'/casino/list/1'} icon={'square'} title={'1win games'} count={13} />
+                        <CategoryGameComponent link={'/casino/list/2'} icon={'square'} title={'new'} count={69} />
+                        <CategoryGameComponent link={'/casino/list/3'} icon={'square'} title={'Quick games'} count={196} />
+                        <CategoryGameComponent link={'/casino/list/4'} icon={'square'} title={'Jackpots'} count={440} />
+                        <CategoryGameComponent link={'/casino/list/5'} icon={'square'} title={'Slots'} count={6914} />
+                        <CategoryGameComponent link={'/casino/list/6'} icon={'square'} title={'Only on 1win'} count={16} />
+                        <CategoryGameComponent link={'/casino/list/7'} icon={'square'} title={'Top Games'} count={191} />
+                        <CategoryGameComponent link={'/casino/list/8'} icon={'square'} title={'Grand Holiday 500$'} count={333} />
                     </CategoryDropdownComponent>
                 </div>
             </header>
@@ -50,14 +50,14 @@ export default function LeftSideNavComponent():ReactNode {
                         </div>
                     </div>
                     <ul className={'[&>li:not(:first-of-type)>a]:border-y [&>li:first-of-type>a]:border-b [&>li>a]:border-white/5'}>
-                        <CategoryGameComponent icon={'square'} title={'1win games'} count={13} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'new'} count={69} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'Quick games'} count={196} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'Jackpots'} count={440} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'Slots'} count={6914} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'Only on 1win'} count={16} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'Top Games'} count={191} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'Grand Holiday 500$'} count={333} link={'#'} />
+                        <CategoryGameComponent link={'/casino/list/1'} icon={'square'} title={'1win games'} count={13} />
+                        <CategoryGameComponent link={'/casino/list/2'} icon={'square'} title={'new'} count={69} />
+                        <CategoryGameComponent link={'/casino/list/3'} icon={'square'} title={'Quick games'} count={196} />
+                        <CategoryGameComponent link={'/casino/list/4'} icon={'square'} title={'Jackpots'} count={440} />
+                        <CategoryGameComponent link={'/casino/list/5'} icon={'square'} title={'Slots'} count={6914} />
+                        <CategoryGameComponent link={'/casino/list/6'} icon={'square'} title={'Only on 1win'} count={16} />
+                        <CategoryGameComponent link={'/casino/list/7'} icon={'square'} title={'Top Games'} count={191} />
+                        <CategoryGameComponent link={'/casino/list/8'} icon={'square'} title={'Grand Holiday 500$'} count={333} />
                     </ul>
                 </div>
                 <div>
@@ -65,14 +65,14 @@ export default function LeftSideNavComponent():ReactNode {
                         <span className={'text-[10px] text-white/50 block truncate'}>PROVIDERS</span>
                     </div>
                     <ul className={'[&>li:not(:first-of-type)>a]:border-y [&>li:first-of-type>a]:border-b [&>li>a]:border-white/5'}>
-                        <CategoryGameComponent icon={'square'} title={'1win games'} count={13} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'new'} count={69} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'Quick games'} count={196} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'Jackpots'} count={440} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'Slots'} count={6914} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'Only on 1win'} count={16} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'Top Games'} count={191} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'Grand Holiday 500$'} count={333} link={'#'} />
+                        <CategoryGameComponent link={'/casino/list/1'} icon={'square'} title={'1win games'} count={13} />
+                        <CategoryGameComponent link={'/casino/list/2'} icon={'square'} title={'new'} count={69} />
+                        <CategoryGameComponent link={'/casino/list/3'} icon={'square'} title={'Quick games'} count={196} />
+                        <CategoryGameComponent link={'/casino/list/4'} icon={'square'} title={'Jackpots'} count={440} />
+                        <CategoryGameComponent link={'/casino/list/5'} icon={'square'} title={'Slots'} count={6914} />
+                        <CategoryGameComponent link={'/casino/list/6'} icon={'square'} title={'Only on 1win'} count={16} />
+                        <CategoryGameComponent link={'/casino/list/7'} icon={'square'} title={'Top Games'} count={191} />
+                        <CategoryGameComponent link={'/casino/list/8'} icon={'square'} title={'Grand Holiday 500$'} count={333} />
                     </ul>
                 </div>
                 <div>
@@ -80,14 +80,14 @@ export default function LeftSideNavComponent():ReactNode {
                         <span className={'text-[10px] text-white/50 block truncate'}>A</span>
                     </div>
                     <ul className={'[&>li:not(:first-of-type)>a]:border-y [&>li:first-of-type>a]:border-b [&>li>a]:border-white/5'}>
-                        <CategoryGameComponent icon={'square'} title={'1win games'} count={13} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'new'} count={69} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'Quick games'} count={196} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'Jackpots'} count={440} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'Slots'} count={6914} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'Only on 1win'} count={16} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'Top Games'} count={191} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'Grand Holiday 500$'} count={333} link={'#'} />
+                        <CategoryGameComponent link={'/casino/list/1'} icon={'square'} title={'1win games'} count={13} />
+                        <CategoryGameComponent link={'/casino/list/2'} icon={'square'} title={'new'} count={69} />
+                        <CategoryGameComponent link={'/casino/list/3'} icon={'square'} title={'Quick games'} count={196} />
+                        <CategoryGameComponent link={'/casino/list/4'} icon={'square'} title={'Jackpots'} count={440} />
+                        <CategoryGameComponent link={'/casino/list/5'} icon={'square'} title={'Slots'} count={6914} />
+                        <CategoryGameComponent link={'/casino/list/6'} icon={'square'} title={'Only on 1win'} count={16} />
+                        <CategoryGameComponent link={'/casino/list/7'} icon={'square'} title={'Top Games'} count={191} />
+                        <CategoryGameComponent link={'/casino/list/8'} icon={'square'} title={'Grand Holiday 500$'} count={333} />
                     </ul>
                 </div>
                 <div>
@@ -95,14 +95,14 @@ export default function LeftSideNavComponent():ReactNode {
                         <span className={'text-[10px] text-white/50 block truncate'}>B</span>
                     </div>
                     <ul className={'[&>li:not(:first-of-type)>a]:border-y [&>li:first-of-type>a]:border-b [&>li>a]:border-white/5'}>
-                        <CategoryGameComponent icon={'square'} title={'1win games'} count={13} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'new'} count={69} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'Quick games'} count={196} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'Jackpots'} count={440} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'Slots'} count={6914} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'Only on 1win'} count={16} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'Top Games'} count={191} link={'#'} />
-                        <CategoryGameComponent icon={'square'} title={'Grand Holiday 500$'} count={333} link={'#'} />
+                        <CategoryGameComponent link={'/casino/list/1'} icon={'square'} title={'1win games'} count={13} />
+                        <CategoryGameComponent link={'/casino/list/2'} icon={'square'} title={'new'} count={69} />
+                        <CategoryGameComponent link={'/casino/list/3'} icon={'square'} title={'Quick games'} count={196} />
+                        <CategoryGameComponent link={'/casino/list/4'} icon={'square'} title={'Jackpots'} count={440} />
+                        <CategoryGameComponent link={'/casino/list/5'} icon={'square'} title={'Slots'} count={6914} />
+                        <CategoryGameComponent link={'/casino/list/6'} icon={'square'} title={'Only on 1win'} count={16} />
+                        <CategoryGameComponent link={'/casino/list/7'} icon={'square'} title={'Top Games'} count={191} />
+                        <CategoryGameComponent link={'/casino/list/8'} icon={'square'} title={'Grand Holiday 500$'} count={333} />
                     </ul>
                 </div>
             </main>
